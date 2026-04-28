@@ -1,0 +1,59 @@
+HOSO Brand Kit — Dual License
+
+Copyright (c) 2026 Công ty TNHH giải pháp bao bì HOSO
+
+================================================================
+1. DOCUMENTATION & TEXT CONTENT
+================================================================
+
+Áp dụng cho: README.md, CHANGELOG.md, BRAND_KIT_DECISIONS.md, SKILL.md,
+toàn bộ file `.md` trong tokens/, voice/, visuals/, industries/,
+ai-prompts/, và bất kỳ file text/markdown/JSON/CSS nào trong repo.
+
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Toàn văn: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Bạn được phép:
+- Share — sao chép và phân phối
+- Adapt — sửa đổi, biến tấu, xây dựng dựa trên
+- Cho mục đích thương mại
+
+Điều kiện:
+- Attribution — phải credit HOSO, link tới license, ghi rõ nếu có thay đổi.
+  Phải làm theo cách hợp lý, không hàm ý HOSO ủng hộ bạn hoặc cách bạn dùng.
+
+================================================================
+2. VISUAL ASSETS
+================================================================
+
+Áp dụng cho: toàn bộ file ảnh trong logo/, visuals/photography/,
+visuals/illustration/, social/, stationary/, và bất kỳ file
+.svg / .png / .jpg / .ai / .fig / .pdf nào trong repo (trừ
+archive/ vốn là tài liệu lịch sử).
+
+License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+International (CC BY-NC-ND 4.0)
+Toàn văn: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+Bạn được phép:
+- Share — sao chép và phân phối ở định dạng gốc, không sửa
+
+Điều kiện:
+- Attribution — phải credit HOSO
+- NonCommercial — không dùng cho mục đích thương mại
+- NoDerivatives — không sửa, không remix, không tạo sản phẩm phái sinh
+
+Sử dụng thương mại logo/asset HOSO (in trên sản phẩm thương mại,
+quảng cáo có thu phí, dùng làm thành phần thiết kế cho khách)
+chỉ được phép bởi HOSO hoặc đối tác được HOSO ủy quyền bằng văn bản.
+
+================================================================
+3. ARCHIVE
+================================================================
+
+File trong thư mục archive/ là tài liệu lịch sử thuộc bản quyền HOSO,
+áp dụng theo CC BY-NC-ND 4.0 như mục 2.
+
+================================================================
+
+Liên hệ về license: hello@tuigiayhoso.com · 0348 989 949
