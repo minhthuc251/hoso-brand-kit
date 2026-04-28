@@ -1,0 +1,60 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "fontFamily": {
+    "heading": {
+      "$value": "'Bricolage Grotesque', Inter, system-ui, sans-serif",
+      "$description": "Heading font. Free Google Fonts. Hỗ trợ tiếng Việt đầy đủ.",
+      "googleFonts": "https://fonts.google.com/specimen/Bricolage+Grotesque"
+    },
+    "body": {
+      "$value": "'Lexend Deca', Inter, system-ui, sans-serif",
+      "$description": "Body font. Thiết kế cho readability cao. Hỗ trợ tiếng Việt đầy đủ.",
+      "googleFonts": "https://fonts.google.com/specimen/Lexend+Deca"
+    },
+    "quote": {
+      "$value": "'Lora', Georgia, serif",
+      "$description": "Italic serif cho trích dẫn, tagline, accent.",
+      "googleFonts": "https://fonts.google.com/specimen/Lora"
+    },
+    "mono": {
+      "$value": "'JetBrains Mono', 'Courier New', monospace",
+      "$description": "Mono cho giá, mã túi, spec kỹ thuật.",
+      "googleFonts": "https://fonts.google.com/specimen/JetBrains+Mono"
+    }
+  },
+  "fontWeight": {
+    "regular": { "$value": 400 },
+    "medium":  { "$value": 500 },
+    "semibold":{ "$value": 600 },
+    "bold":    { "$value": 700 },
+    "extrabold": { "$value": 800 }
+  },
+  "fontSize": {
+    "h1":         { "$value": "48px", "mobile": "38px" },
+    "h2":         { "$value": "36px", "mobile": "29px" },
+    "h3":         { "$value": "24px", "mobile": "22px" },
+    "h4":         { "$value": "20px", "mobile": "18px" },
+    "body-large": { "$value": "18px" },
+    "body":       { "$value": "16px" },
+    "body-small": { "$value": "14px" },
+    "caption":    { "$value": "12px" }
+  },
+  "lineHeight": {
+    "tight":   { "$value": "1.1", "$description": "H1, display" },
+    "snug":    { "$value": "1.3", "$description": "H2, H3" },
+    "normal":  { "$value": "1.4", "$description": "H4, caption" },
+    "relaxed": { "$value": "1.6", "$description": "Body" }
+  },
+  "letterSpacing": {
+    "heading": { "$value": "-0.02em", "$description": "Heading tracking âm nhẹ — premium feel" },
+    "body":    { "$value": "0" },
+    "wide":    { "$value": "0.05em", "$description": "Caption uppercase, label" }
+  },
+  "rules": [
+    "Tối đa 2 weight cùng 1 trang.",
+    "Heading line-height 1.1–1.3, body 1.5–1.6.",
+    "Không UPPERCASE quá 4 từ liên tiếp (trừ wordmark).",
+    "Body không italic — chỉ dùng italic cho trích dẫn, tên sản phẩm.",
+    "Heading tracking -0.02em."
+  ]
+}

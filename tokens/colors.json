@@ -1,0 +1,57 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "brand": {
+    "primary": {
+      "$value": "#78bc20",
+      "$description": "Xanh lá HOSO. Logo, CTA chính, accent.",
+      "rgb": "120, 188, 32",
+      "cmyk": "58, 2, 100, 0"
+    },
+    "primary-dark": {
+      "$value": "#519600",
+      "$description": "Xanh đậm. Hover state, accent secondary, footer.",
+      "rgb": "81, 150, 0",
+      "cmyk": "73, 19, 100, 4"
+    }
+  },
+  "neutral": {
+    "dark": {
+      "$value": "#603a17",
+      "$description": "Nâu kraft. Text trên nền sáng, vibe organic.",
+      "rgb": "96, 58, 23",
+      "cmyk": "42, 69, 95, 49"
+    },
+    "light": {
+      "$value": "#f4e6d7",
+      "$description": "Kem giấy kraft. Nền section, cảm giác giấy thật.",
+      "rgb": "244, 230, 215",
+      "cmyk": "3, 8, 14, 0"
+    },
+    "white": {
+      "$value": "#ffffff",
+      "$description": "Nền chính."
+    },
+    "black": {
+      "$value": "#1a1a1a",
+      "$description": "Text body. KHÔNG dùng đen tuyền #000000."
+    }
+  },
+  "semantic": {
+    "success": {
+      "$value": "#519600",
+      "$description": "Trùng primary-dark — xác nhận, hoàn tất."
+    },
+    "warning": {
+      "$value": "#e8a317",
+      "$description": "Cảnh báo, chú ý."
+    },
+    "error": {
+      "$value": "#c0392b",
+      "$description": "Lỗi, hành động phá hủy."
+    },
+    "info": {
+      "$value": "#3b7ea8",
+      "$description": "Thông tin, hướng dẫn."
+    }
+  }
+}
