@@ -1,0 +1,53 @@
+# Đồng bộ 1 CHIỀU brand voice: kit → ERP.
+# Khi facts.json đổi trên main → POST vào ERP (bảng brand_voice_synced qua /api/brand-voice/sync).
+# ERP là nơi ĐỌC (MCP resource hoso://brand-voice); kit là nơi SOẠN. Không ghi ngược.
+#
+# Secrets/vars cần đặt trong repo (Settings → Secrets and variables → Actions):
+#   secrets.ERP_SYNC_URL     = https://erp.tuigiayhoso.com/api/brand-voice/sync
+#   secrets.ERP_AGENT_TOKEN  = hoso_agent_...  (PAT của 1 nhân viên có quyền brand / superadmin)
+#   vars.HOSO_BRAND_CODE     = (tuỳ chọn) code của brand trong ERP; bỏ trống = brand mặc định.
+
+name: Sync brand voice to ERP
+
+on:
+  push:
+    branches: [main]
+    paths: ['facts.json']
+  workflow_dispatch: {}
+
+concurrency:
+  group: sync-to-erp
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate facts.json
+        run: jq empty facts.json
+
+      - name: Build payload
+        id: payload
+        run: |
+          jq -c -n \
+            --slurpfile f facts.json \
+            --arg brand "${{ vars.HOSO_BRAND_CODE }}" \
+            '{version: ($f[0]._meta.version // null), compiled: $f[0]}
+             + (if $brand == "" then {} else {brand_code: $brand} end)' \
+            > payload.json
+          echo "version=$(jq -r '._meta.version // "?"' facts.json)" >> "$GITHUB_OUTPUT"
+
+      - name: POST to ERP
+        run: |
+          code=$(curl -sS -o resp.json -w '%{http_code}' \
+            -X POST "${{ secrets.ERP_SYNC_URL }}" \
+            -H "Authorization: Bearer ${{ secrets.ERP_AGENT_TOKEN }}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @payload.json)
+          echo "HTTP $code"; cat resp.json
+          if [ "$code" != "200" ]; then
+            echo "::error::Sync brand voice → ERP thất bại (HTTP $code)"; exit 1
+          fi
+          echo "✅ Synced facts.json v${{ steps.payload.outputs.version }} → ERP"
