@@ -2,8 +2,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "_meta": {
     "id": "hoso-brand-facts",
-    "version": "0.2.0",
-    "description": "Single source of truth (machine-readable) cho MỌI fact nền của thương hiệu HOSO mà AI (Claude/ChatGPT/Gemini) phải ground chắc trước khi viết content. Gom lại những định nghĩa vốn nằm rải rác trong voice-guide.md / examples-*.md / BRAND_KIT_DECISIONS.md. AI CHỈ được dùng fact ở đây; không có ở đây thì HỎI người, KHÔNG bịa.",
+    "version": "0.3.0",
+    "description": "Single source of truth (machine-readable) cho MỌI fact nền của thương hiệu HOSO mà AI (Claude/ChatGPT/Gemini) phải ground chắc trước khi viết content. Gom lại những định nghĩa vốn nằm rải rác trong voice-guide.md / examples-*.md / BRAND_KIT_DECISIONS.md. AI CHỈ được dùng fact ở đây; không có ở đây thì HỎI người, KHÔNG bịa. v0.3.0: core_values + guardrails_not_do viết lại từ PHỎNG VẤN FOUNDER 2026-07-05 (bản cũ chỉ gom từ chỗ rải rác); ràng buộc mô hình cũ chuyển sang business_model_boundaries.",
     "canonical_sources": [
       "voice/voice-guide.md",
       "voice/examples-good.md",
@@ -69,56 +69,76 @@
   "core_values": [
     {
       "id": 1,
-      "name": "Vươn khỏi địa lý",
-      "meaning": "Vượt rào cản địa lý cho khách bị xưởng lớn/địa phương bỏ rơi — không để khách phải 'đợi chành xe mòn mỏi' vì khoảng cách.",
-      "provenance": "Chỉ liệt kê TÊN ở examples-good.md:335; nghĩa suy từ mission (barrier 'chành xe'). CHƯA có nguồn khẳng định 'phủ toàn quốc' — nếu founder xác nhận HOSO giao toàn quốc thì mới thêm cụm đó."
+      "name": "Không để khách lỡ cơ hội",
+      "meaning": "Giao nhanh 2-3 ngày, đúng hạn, phủ toàn quốc — vì khách kinh doanh sợ nhất là BỎ LỠ (deadline event/sự kiện, lỡ mùa bán, chờ đợi mòn mỏi). Dù ở đâu, khách cũng không phải lỡ cơ hội vì bao bì.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 1,3,B: 'khách hàng kinh doanh rất sợ bỏ lỡ'; HOSO giao toàn quốc — đã xác nhận). Gộp giá trị cũ 'Vươn khỏi địa lý'."
     },
     {
       "id": 2,
-      "name": "Cho đi không toan tính",
-      "meaning": "Gửi mẫu miễn phí, in test miễn phí, tặng file gốc, cho xem trước khi đặt — cho đi giá trị trước, không cam kết. Đây là moat tinh thần xưởng khác khó copy.",
-      "vocab_group": "voice-guide §7 Nhóm 3"
+      "name": "Chăm tới khi khách ưng",
+      "meaning": "Mọi thứ xoay quanh trải nghiệm khách: sửa file thiết kế miễn phí đến khi ưng, in test, gửi mẫu thật, chụp ảnh thành phẩm cho xem trước khi giao. Đứng cạnh khách như người đồng hành, không phải người bán.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 1,C). Archetype Caregiver. Gộp giá trị cũ 'Cho đi không toan tính'."
     },
     {
       "id": 3,
-      "name": "Che chở dòng vốn",
-      "meaning": "Không ép số lượng (100-200 túi cũng làm), linh hoạt MOQ, lưu kho miễn phí, không để khách phải mua thừa ôm tồn — bảo vệ dòng vốn của khách nhỏ.",
-      "vocab_group": "voice-guide §7 Nhóm 4"
+      "name": "Liêm chính, nói thật về chất lượng",
+      "meaning": "Không nói quá, không để khách kỳ vọng cao hơn chất lượng thật. Chưa chắc chất lượng thì gửi mẫu duyệt trước chứ không chốt đơn vội. Giá niêm yết minh bạch, ai cũng như ai. Uy tín đắt hơn đơn hàng trước mắt.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 4,5). Gộp giá trị cũ 'Uy tín đắt hơn vàng'."
     },
     {
       "id": 4,
-      "name": "Uy tín đắt hơn vàng",
-      "meaning": "Đúng spec, đúng hẹn, sửa lỗi 100% (in lại miễn phí nếu lỗi), minh bạch giấy tờ/hợp đồng. Không đổ lỗi cho khách khi có sự cố.",
-      "vocab_group": "voice-guide §7 Nhóm 7"
+      "name": "Nâng tầm: cho khách & cho cộng đồng",
+      "meaning": "Vui và tự hào khi túi HOSO nâng tầm thương hiệu khách, xuất hiện ngoài đời trong tay khách-của-khách; và khi HOSO góp cho xã hội qua thiện nguyện/nhân đạo. Làm bao bì 'có hồn' — tạo giá trị vượt ngoài giao dịch.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 2,A,E). Đúng vế 2 slogan 'Nâng tầm thương hiệu'; craft (Creator) feed vào đây."
     }
   ],
+
+  "service_promises": {
+    "_note": "Hành vi chăm sóc CỤ THỂ, có thật — dùng làm proof point trong content (không bịa).",
+    "provenance": "Phỏng vấn founder 2026-07-05 (câu C)",
+    "items": [
+      "Sửa file thiết kế miễn phí đến khi khách ưng",
+      "In test + gửi mẫu thật trước khi sản xuất loạt",
+      "Chụp ảnh thành phẩm gửi khách xem trước khi giao"
+    ]
+  },
 
   "guardrails_not_do": [
     {
       "id": 1,
-      "name": "Không sản xuất bao bì phi sinh thái",
-      "meaning": "Chỉ kraft nguyên sinh + mực gốc nước + quai xoắn giấy/vải đan. KHÔNG ruy băng nilon, không nhựa, không nilon công nghiệp.",
-      "provenance": "examples-bad.md:192"
+      "name": "Không chốt ẩu khi chưa chắc chất lượng",
+      "meaning": "Chưa chắc sản phẩm hoàn hảo thì gửi mẫu cho khách duyệt trước — không vì lợi ích trước mắt mà sản xuất & gửi đại rồi để khách thất vọng.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 4)"
     },
     {
       "id": 2,
-      "name": "Không đánh đổi tốc độ lấy phức tạp",
-      "meaning": "Từ chối đơn MOQ cực cao (>50.000 cái) đòi in offset 8 màu — HOSO không cạnh tranh ở đó, giữ mô hình nhanh/linh hoạt.",
-      "provenance": "voice-guide.md:298"
+      "name": "Không nói quá, không ép chốt đơn",
+      "meaning": "Không thổi phồng, không để khách kỳ vọng cao hơn chất lượng thật; không gây áp lực mua — để khách tự quyết sau khi hiểu đúng.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 5)"
     },
     {
       "id": 3,
-      "name": "Không ép MOQ khách nhỏ",
-      "meaning": "Không bắt đặt tối thiểu số lớn với khách nhỏ. 100-200 túi cũng làm. Đây là core differentiator.",
-      "provenance": "examples-bad.md:165"
+      "name": "Không phá giá, không giảm giá riêng",
+      "meaning": "Giá niêm yết minh bạch để khách yên tâm (ai cũng như ai). Không hạ giá để kéo khách, không giảm giá lén cho từng người.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 5,6)"
     },
     {
       "id": 4,
-      "name": "Không tham đĩa bỏ mâm",
-      "meaning": "Không vì đơn lớn mà bỏ rơi/hạ ưu tiên khách nhỏ. Câu kiểu 'đơn nhỏ ưu tiên sau' là vi phạm trực tiếp.",
-      "provenance": "examples-bad.md:278"
+      "name": "Không sao chép đối thủ",
+      "meaning": "Nội dung, ý tưởng phải là của chính HOSO. Không bắt chước, không copy content đối thủ.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 6)"
     }
   ],
+
+  "business_model_boundaries": {
+    "_note": "Ràng buộc MÔ HÌNH kinh doanh (khác với hàng rào GIÁ TRỊ ở trên) — HOSO nhận/không nhận loại đơn nào. Giữ từ BRAND_KIT_DECISIONS, không mất.",
+    "items": [
+      "Chỉ làm bao bì sinh thái (kraft nguyên sinh + mực gốc nước + quai giấy) — không nilon/nhựa. [examples-bad.md:192]",
+      "Không đánh đổi tốc độ lấy phức tạp — từ chối đơn >50.000 cái đòi offset 8 màu. [voice-guide.md:298]",
+      "Không ép MOQ khách nhỏ — 100-200 túi cũng làm. [examples-bad.md:165]",
+      "Không tham đĩa bỏ mâm — không bỏ rơi/hạ ưu tiên khách nhỏ vì đơn lớn. [examples-bad.md:278]"
+    ]
+  },
 
   "tone": {
     "spectrum": {

@@ -38,17 +38,19 @@ HOSO là "kho lưu trữ trọn gói và xưởng in dã chiến" cho tệp khá
 
 ## 4 Core Values (bám ít nhất 1 mỗi bài)
 
-1. **Vươn khỏi địa lý** — khách không phải lệ thuộc xưởng địa phương hay "đợi chành xe mòn mỏi" vì khoảng cách.
-2. **Cho đi không toan tính** — mẫu/test/file gốc miễn phí, cho giá trị trước, không cam kết.
-3. **Che chở dòng vốn** — không ép số lượng, 100-200 túi cũng làm, không để khách ôm tồn.
-4. **Uy tín đắt hơn vàng** — đúng spec, đúng hẹn, sửa lỗi 100%, minh bạch giấy tờ.
+1. **Không để khách lỡ cơ hội** — giao nhanh 2-3 ngày, đúng hạn, toàn quốc; khách kinh doanh sợ nhất là bỏ lỡ (deadline event, lỡ mùa bán, chờ đợi mòn mỏi).
+2. **Chăm tới khi khách ưng** — sửa file thiết kế miễn phí đến khi ưng, in test, gửi mẫu, chụp ảnh thành phẩm cho xem trước. Mọi thứ xoay quanh trải nghiệm khách.
+3. **Liêm chính, nói thật về chất lượng** — không nói quá, không để khách kỳ vọng cao hơn thật; chưa chắc chất lượng thì gửi mẫu duyệt trước. Uy tín hơn đơn hàng trước mắt.
+4. **Nâng tầm: cho khách & cho cộng đồng** — tự hào khi túi HOSO nâng tầm thương hiệu khách ra ngoài đời; góp cho xã hội qua thiện nguyện; làm bao bì "có hồn".
 
 ## 4 Hàng rào KHÔNG LÀM
 
-1. Không sản xuất bao bì phi sinh thái (không nilon/nhựa/ruy băng nilon).
-2. Không đánh đổi tốc độ lấy phức tạp (từ chối đơn >50.000 cái đòi offset 8 màu).
-3. Không ép MOQ khách nhỏ.
-4. Không tham đĩa bỏ mâm (không vì đơn lớn mà bỏ rơi khách nhỏ; cấm "đơn nhỏ ưu tiên sau").
+1. **Không chốt ẩu khi chưa chắc chất lượng** — gửi mẫu duyệt trước, không sản xuất & gửi đại để chốt cho nhanh.
+2. **Không nói quá, không ép chốt đơn** — không thổi phồng kỳ vọng, để khách tự quyết.
+3. **Không phá giá, không giảm giá riêng** — giá niêm yết minh bạch, ai cũng như ai.
+4. **Không sao chép đối thủ** — nội dung phải là của chính HOSO.
+
+*(Ràng buộc mô hình kinh doanh — chỉ bao bì sinh thái, không ép MOQ khách nhỏ, không nhận đơn >50.000 cái offset 8 màu, không bỏ rơi khách nhỏ vì đơn lớn — xem `facts.json › business_model_boundaries`.)*
 
 ## Persona (điều chỉnh pain + value theo người đọc)
 
