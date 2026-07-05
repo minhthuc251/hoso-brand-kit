@@ -39,13 +39,12 @@ Tiếng lóng/teen (đỉnh, xỉu, mê li, iu, nha, nè), sale rởm (giá số
 | Viết email B2B / báo giá | `voice/content-templates/email-b2b-quote.md` |
 | Mô tả sản phẩm | `voice/content-templates/product-description.md` |
 | Viết hero section landing | `voice/content-templates/landing-hero.md` |
-| Generate ảnh sản phẩm | `visuals/photography-style.md` + `visuals/prompt-templates/product-shot.md` |
-| Generate ảnh lifestyle theo ngành | `visuals/prompt-templates/lifestyle-{ngành}.md` |
-| Content cho ngành cụ thể | `industries/{ngành}.md` |
+| Cần fact nền / persona / core value / hàng rào (chống bịa) | `facts.json` |
+| Generate ảnh (phong cách, prop, điều cấm) | `facts.json` › mục `photography` |
 | Cần màu/font/spacing chính xác | `tokens/colors.json`, `tokens/typography.json`, `tokens/spacing.json` |
 | Cần logo SVG/PNG | `logo/` |
 | Tham khảo voice + ví dụ đúng/sai | `voice/examples-good.md`, `voice/examples-bad.md` |
-| Master system prompt cho non-Claude AI | `ai-prompts/system-prompt-hoso-assistant.md` |
+| Dùng AI ngoài Claude (ChatGPT/Gemini) | `ai-prompts/system-prompt-hoso-assistant.md` + `ai-prompts/README.md` |
 
 ## CTA chuẩn (rút từ library, đừng tự sáng tạo)
 

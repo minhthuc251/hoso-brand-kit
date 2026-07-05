@@ -1,0 +1,319 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "_meta": {
+    "id": "hoso-brand-facts",
+    "version": "0.3.0",
+    "description": "Single source of truth (machine-readable) cho MỌI fact nền của thương hiệu HOSO mà AI (Claude/ChatGPT/Gemini) phải ground chắc trước khi viết content. Gom lại những định nghĩa vốn nằm rải rác trong voice-guide.md / examples-*.md / BRAND_KIT_DECISIONS.md. AI CHỈ được dùng fact ở đây; không có ở đây thì HỎI người, KHÔNG bịa. v0.3.0: core_values + guardrails_not_do viết lại từ PHỎNG VẤN FOUNDER 2026-07-05 (bản cũ chỉ gom từ chỗ rải rác); ràng buộc mô hình cũ chuyển sang business_model_boundaries.",
+    "canonical_sources": [
+      "voice/voice-guide.md",
+      "voice/examples-good.md",
+      "voice/examples-bad.md",
+      "BRAND_KIT_DECISIONS.md",
+      "tokens/colors.json",
+      "tokens/typography.json"
+    ],
+    "rule": "Fact ở file này thắng mọi suy đoán của AI. Nếu voice-guide đổi thì cập nhật cả file này (một ngày nên có generator sinh tự động thay vì gõ tay).",
+    "human_review_required": true
+  },
+
+  "brand": {
+    "legal_name": "Công ty TNHH giải pháp bao bì HOSO",
+    "short_name": "HOSO",
+    "slogan": "Đồng hành kinh doanh — Nâng tầm thương hiệu",
+    "vision": "Giải pháp bao bì xanh \"nhanh – ít – rẻ\" hàng đầu Việt Nam",
+    "hotline": "0348 989 949",
+    "website": "tuigiayhoso.com",
+    "core_product": "Túi giấy kraft + dịch vụ in phun kỹ thuật số siêu tốc",
+    "channels": ["Top 1 Shopee", "website tuigiayhoso.com", "hotline 0348 989 949"],
+    "mission": "HOSO sinh ra để làm kho lưu trữ trọn gói và xưởng in dã chiến cho tệp khách hàng bị các xưởng lớn lãng quên — hàng ngàn chủ shop SME, tiệm khởi nghiệp, người làm event — những người không đáng phải ôm hàng ngàn túi tồn đọng vốn, đợi chành xe mòn mỏi, hay chậm deadline sự kiện vì xưởng lớn cửa quyền.",
+    "mission_test": "Khi viết, tự hỏi: câu này có thực sự đứng về phía những người bị xưởng lớn bỏ rơi không?"
+  },
+
+  "product_facts": {
+    "_note": "Đây là bảng override quan trọng nhất — AI hay viết SAI vì training data mặc định 'in offset / MOQ 500 / giấy tái chế'. Luôn dùng đúng các fact dưới.",
+    "material": "Kraft nguyên sinh nhập khẩu 100% (KHÔNG tái chế)",
+    "ink": "Mực gốc nước, thấm thẳng vào giấy",
+    "handle": "Quai xoắn giấy thủ công (KHÔNG ruy băng nilon)",
+    "print": "In phun kỹ thuật số (in KTS) — KHÔNG offset",
+    "moq": "Linh hoạt — không ép MOQ với khách nhỏ (100 túi cũng làm)",
+    "lead_time": "2-3 ngày sản xuất — siêu tốc",
+    "free_sample": "Gửi mẫu thật + in test theo design của khách, miễn phí",
+    "why_digital_print": "In phun KTS là SELLING POINT chứ không phải hạn chế: không cần kẽm/plate → rẻ được cho khách nhỏ · đơn 100 cái vẫn làm · đổi design giữa chừng linh hoạt. Ưu tiên gọi 'in phun KTS' / 'in kỹ thuật số trực tiếp'."
+  },
+
+  "green_packaging": {
+    "_note": "Nói về 'xanh' PHẢI nói cả 2 tầng, không chỉ 'thân thiện môi trường' chung chung.",
+    "layer_1_physical": [
+      "100% giấy kraft nguyên sinh nhập khẩu (không tái chế độc hại)",
+      "Mực gốc nước thấm thẳng vào giấy",
+      "Quai xoắn giấy thủ công (không nilon công nghiệp)"
+    ],
+    "layer_2_cashflow_ecosystem": [
+      "MOQ linh hoạt → khách không phải đặt 1.000 túi rồi vứt 700 cái",
+      "Tốc độ 2-3 ngày → không phải đặt sớm, lưu kho, rồi outdated design"
+    ]
+  },
+
+  "archetype": {
+    "primary": {
+      "name": "Caregiver",
+      "meaning": "Chăm sóc, đồng hành. Đứng cạnh khách — đặc biệt chủ shop nhỏ, founder mới, người làm event lần đầu. Xuất hiện như 'người bạn đồng hành', không phải 'người bán hàng'. Quan tâm dòng vốn của khách, không chỉ giao dịch hôm nay."
+    },
+    "secondary": {
+      "name": "Creator",
+      "meaning": "Sáng tạo, nâng tầm. Đam mê làm bao bì có hồn. Nói về craft (chất giấy, mực gốc nước, quai xoắn), khoe khả năng custom, tôn vinh thương hiệu khách qua bao bì — không lấn át."
+    },
+    "dropped": "Everyman (mâu thuẫn với 'nâng tầm')"
+  },
+
+  "core_values": [
+    {
+      "id": 1,
+      "name": "Không để khách lỡ cơ hội",
+      "meaning": "Giao nhanh 2-3 ngày, đúng hạn, phủ toàn quốc — vì khách kinh doanh sợ nhất là BỎ LỠ (deadline event/sự kiện, lỡ mùa bán, chờ đợi mòn mỏi). Dù ở đâu, khách cũng không phải lỡ cơ hội vì bao bì.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 1,3,B: 'khách hàng kinh doanh rất sợ bỏ lỡ'; HOSO giao toàn quốc — đã xác nhận). Gộp giá trị cũ 'Vươn khỏi địa lý'."
+    },
+    {
+      "id": 2,
+      "name": "Chăm tới khi khách ưng",
+      "meaning": "Mọi thứ xoay quanh trải nghiệm khách: sửa file thiết kế miễn phí đến khi ưng, in test, gửi mẫu thật, chụp ảnh thành phẩm cho xem trước khi giao. Đứng cạnh khách như người đồng hành, không phải người bán.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 1,C). Archetype Caregiver. Gộp giá trị cũ 'Cho đi không toan tính'."
+    },
+    {
+      "id": 3,
+      "name": "Liêm chính, nói thật về chất lượng",
+      "meaning": "Không nói quá, không để khách kỳ vọng cao hơn chất lượng thật. Chưa chắc chất lượng thì gửi mẫu duyệt trước chứ không chốt đơn vội. Giá niêm yết minh bạch, ai cũng như ai. Uy tín đắt hơn đơn hàng trước mắt.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 4,5). Gộp giá trị cũ 'Uy tín đắt hơn vàng'."
+    },
+    {
+      "id": 4,
+      "name": "Nâng tầm: cho khách & cho cộng đồng",
+      "meaning": "Vui và tự hào khi túi HOSO nâng tầm thương hiệu khách, xuất hiện ngoài đời trong tay khách-của-khách; và khi HOSO góp cho xã hội qua thiện nguyện/nhân đạo. Làm bao bì 'có hồn' — tạo giá trị vượt ngoài giao dịch.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 2,A,E). Đúng vế 2 slogan 'Nâng tầm thương hiệu'; craft (Creator) feed vào đây."
+    }
+  ],
+
+  "service_promises": {
+    "_note": "Hành vi chăm sóc CỤ THỂ, có thật — dùng làm proof point trong content (không bịa).",
+    "provenance": "Phỏng vấn founder 2026-07-05 (câu C)",
+    "items": [
+      "Sửa file thiết kế miễn phí đến khi khách ưng",
+      "In test + gửi mẫu thật trước khi sản xuất loạt",
+      "Chụp ảnh thành phẩm gửi khách xem trước khi giao"
+    ]
+  },
+
+  "guardrails_not_do": [
+    {
+      "id": 1,
+      "name": "Không chốt ẩu khi chưa chắc chất lượng",
+      "meaning": "Chưa chắc sản phẩm hoàn hảo thì gửi mẫu cho khách duyệt trước — không vì lợi ích trước mắt mà sản xuất & gửi đại rồi để khách thất vọng.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 4)"
+    },
+    {
+      "id": 2,
+      "name": "Không nói quá, không ép chốt đơn",
+      "meaning": "Không thổi phồng, không để khách kỳ vọng cao hơn chất lượng thật; không gây áp lực mua — để khách tự quyết sau khi hiểu đúng.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 5)"
+    },
+    {
+      "id": 3,
+      "name": "Không phá giá, không giảm giá riêng",
+      "meaning": "Giá niêm yết minh bạch để khách yên tâm (ai cũng như ai). Không hạ giá để kéo khách, không giảm giá lén cho từng người.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 5,6)"
+    },
+    {
+      "id": 4,
+      "name": "Không sao chép đối thủ",
+      "meaning": "Nội dung, ý tưởng phải là của chính HOSO. Không bắt chước, không copy content đối thủ.",
+      "provenance": "Phỏng vấn founder 2026-07-05 (câu 6)"
+    }
+  ],
+
+  "business_model_boundaries": {
+    "_note": "Ràng buộc MÔ HÌNH kinh doanh (khác với hàng rào GIÁ TRỊ ở trên) — HOSO nhận/không nhận loại đơn nào. Giữ từ BRAND_KIT_DECISIONS, không mất.",
+    "items": [
+      "Chỉ làm bao bì sinh thái (kraft nguyên sinh + mực gốc nước + quai giấy) — không nilon/nhựa. [examples-bad.md:192]",
+      "Không đánh đổi tốc độ lấy phức tạp — từ chối đơn >50.000 cái đòi offset 8 màu. [voice-guide.md:298]",
+      "Không ép MOQ khách nhỏ — 100-200 túi cũng làm. [examples-bad.md:165]",
+      "Không tham đĩa bỏ mâm — không bỏ rơi/hạ ưu tiên khách nhỏ vì đơn lớn. [examples-bad.md:278]"
+    ]
+  },
+
+  "tone": {
+    "spectrum": {
+      "serious": "55% (B2B SME quyết định bằng lý trí; không đùa nhảm, có nụ cười nhẹ ấm áp)",
+      "casual": "60% (khách là chủ shop/founder; formal quá = công văn = mất gần gũi)",
+      "respectful": "100% (tuyệt đối — không cà khịa đối thủ, không meme thô, không chính trị)",
+      "enthusiastic": "60% (có lửa khi kể craft/cứu deadline; khô khan khi nói số liệu giá/lead time)"
+    }
+  },
+
+  "pronouns": {
+    "default_90pct": { "self": "HOSO", "audience": "bạn", "use_for": "caption, email marketing, blog, mô tả SP" },
+    "formal_10pct": { "self": "HOSO", "audience": "Quý khách", "use_for": "hợp đồng, báo giá B2B lớn, email enterprise đầu" },
+    "forbidden": ["shop", "ad", "mình ơi", "iu", "chúng mình", "khách yêu"]
+  },
+
+  "personas": [
+    {
+      "id": "P1",
+      "name": "Chủ shop nhỏ lẻ (Decision Maker)",
+      "pain": "Sợ đọng vốn khi mua nhiều, sợ in sai màu, sợ bị xưởng lừa cọc, ngân sách hạn chế.",
+      "value_promise": "Không ép MOQ (200 túi cũng OK), gửi mẫu test trực quan, thanh toán an toàn, Top 1 Shopee bảo chứng.",
+      "tone": "Gần gũi, 'đứng cạnh anh/chị', nhấn không tốn vốn."
+    },
+    {
+      "id": "P2",
+      "name": "Quản lý mua hàng B2B (Financial Buyer)",
+      "pain": "Ngân sách giới hạn, cần hóa đơn VAT, cần công nợ rõ ràng, cần báo giá chính thức.",
+      "value_promise": "Bảng giá xưởng cạnh tranh, cung cấp đủ giấy tờ, hợp đồng minh bạch.",
+      "tone": "Formal hơn, dùng 'Quý khách', nhấn minh bạch + giấy tờ."
+    },
+    {
+      "id": "P3",
+      "name": "HR / Event organizer (User/Champion)",
+      "pain": "Mua không thường xuyên, cần linh hoạt họa tiết, deadline gấp.",
+      "value_promise": "Tốc độ 2-3 ngày, tùy biến cao, lưu kho miễn phí giữa các event.",
+      "tone": "Nhấn tốc độ + cứu hỏa, 'deadline gấp HOSO làm được'."
+    }
+  ],
+  "anti_persona": "Khách lớn cần MOQ cực cao (>50.000 cái/đơn) đòi in offset 8 màu — KHÔNG pitch HOSO (vi phạm Hàng rào #2).",
+
+  "vocab": {
+    "allowlist": {
+      "dong_hanh_caregiver": ["đồng hành", "song hành", "cùng bạn", "hỗ trợ", "lắng nghe", "tư vấn", "chu đáo", "tận tâm", "sẵn sàng", "luôn ở bên", "giúp bạn", "đáp ứng", "đảm bảo"],
+      "toc_do": ["nhanh", "siêu tốc", "2-3 ngày", "kịp event", "cuốn chiếu", "cứu hỏa", "không chậm", "đúng deadline", "gấp được", "kịp giờ G"],
+      "cho_di_khong_toan_tinh": ["miễn phí", "gửi mẫu miễn phí", "in test miễn phí", "file gốc tặng", "không cam kết", "xem trước khi đặt", "trải nghiệm thử"],
+      "che_cho_dong_von": ["không ép số lượng", "100 túi cũng làm", "linh hoạt MOQ", "không tồn vốn", "lưu kho miễn phí", "xả cuốn chiếu", "không phải mua thừa"],
+      "ban_sac_creator": ["nâng tầm", "kể câu chuyện", "thiết kế riêng", "tinh chỉnh", "ấp ủ", "chăm chút từng chi tiết", "form", "chất cảm", "gu", "cảm hứng", "dấu ấn"],
+      "bao_bi_xanh": ["giấy kraft nguyên sinh", "mực gốc nước", "quai xoắn giấy", "phân hủy được", "không nhựa", "không nilon", "có trách nhiệm"],
+      "uy_tin": ["đúng spec", "đúng hẹn", "cam kết", "sửa lỗi 100%", "in lại miễn phí", "minh bạch", "giấy tờ đầy đủ", "hợp đồng rõ"]
+    },
+    "blocklist": {
+      "teen_slang": ["đỉnh", "đỉnh chóp", "xỉu", "mê li", "iu", "hong", "ko", "gòi", "nha", "nhe", "nè", "ạ ạ"],
+      "sale_rom": ["giá sốc", "rẻ vô địch", "độc quyền duy nhất", "số 1 không có đối thủ", "mua ngay kẻo lỡ", "cơ hội cuối cùng"],
+      "hype_rong": ["wow", "woa", "ôi", "omg", "cực kỳ", "vô cùng tuyệt vời", "không thể tin nổi"],
+      "cham_choc_doi_thu": ["so với bên A/B", "xưởng khác chỉ là", "đừng dại", "bên khác làm dối"],
+      "tu_tuyet_doi": ["luôn luôn", "không bao giờ", "100% (trừ context cụ thể như 'kraft 100% nguyên sinh')", "mãi mãi"],
+      "dich_may_tho": ["đáng kinh ngạc", "nhân tiện", "vào cuối ngày", "điều đó nói lên rằng"]
+    },
+    "product_error_corrections": {
+      "in offset": "in phun KTS / in kỹ thuật số",
+      "MOQ 500 / đặt tối thiểu 1.000 cái": "không ép MOQ / 100 túi cũng làm được",
+      "lead time 14 ngày / sản xuất 2 tuần": "2-3 ngày / siêu tốc",
+      "giấy tái chế": "kraft nguyên sinh nhập khẩu"
+    },
+    "no_fabrication_rule": {
+      "rule": "Rule KHÔNG đàm phán: nếu không có dữ liệu cụ thể trong vault/facts, TUYỆT ĐỐI không bịa số liệu/tên brand.",
+      "forbidden_examples": ["300+ thương hiệu đã đồng hành", "50+ chuỗi cafe", "30+ thương hiệu OCOP", "đối tác Phúc Long, Cocoon..."],
+      "safe_proof_points": ["Top 1 Shopee", "Doanh nghiệp đã hoạt động nhiều năm", "Hàng ngàn chủ shop SME đã đặt qua HOSO"]
+    }
+  },
+
+  "sentence_rules": {
+    "avg_words": "12–18",
+    "max_words": 25,
+    "max_sentences_per_paragraph": 3,
+    "reading_level": "lớp 9–10 (tránh Hán-Việt nặng)",
+    "person": "ngôi 2 ('bạn') chủ đạo",
+    "fb_caption_structure": ["[Hook 1 câu] gây tò mò / nói thẳng pain persona", "[Body 2-4 câu] kể tinh thần (xưởng dã chiến / che chở dòng vốn / cho đi không toan tính)", "[CTA 1 câu] rút từ cta_library", "[Hashtag] 3-5 tag FB, 8-12 tag IG"]
+  },
+
+  "emoji": {
+    "whitelist": ["🌱", "🌿", "☘️", "📦", "🎨", "✨", "✅", "📩", "📞", "💬", "⚡ (speed, dùng vừa)"],
+    "blacklist": ["🤣", "😂", "🥰", "😍", "🥺", "🙏 (lạm dụng)", "🔥", "💸", "💰"],
+    "density_per_post": { "facebook": "2-3", "instagram": "3-5", "tiktok": "3-5", "email_marketing": "0-1 (chỉ subject)", "email_b2b": "0", "web_landing": "0", "hop_dong": "0 tuyệt đối" }
+  },
+
+  "hashtag": {
+    "mandatory": ["#HOSO", "#tuigiayhoso", "#baobixanh"],
+    "max_per_channel": { "facebook": "3-5", "instagram": "8-12", "tiktok": "4-6" },
+    "forbidden": ["#sale", "#giamgia", "#shopee (trừ context Shopee chính thức)", "#mcm", "#ootd"]
+  },
+
+  "cta_library": {
+    "tu_van_primary": "Inbox HOSO để được tư vấn mẫu phù hợp — HOSO sẵn sàng gửi hàng mẫu miễn phí, thậm chí in test theo thiết kế của bạn để gửi xem trực tiếp.",
+    "short_tiktok_ig": ["Inbox HOSO — gửi mẫu miễn phí 2-3 ngày, không ép số lượng.", "Nhắn HOSO để in test miễn phí theo design của bạn."],
+    "lien_he": ["Gọi HOSO 0348 989 949 — sẵn sàng đồng hành cùng bạn.", "Liên hệ HOSO 0348 989 949 — tư vấn miễn phí 8h–17h30."],
+    "dat_mau_thu": ["Gửi design của bạn, HOSO in test gửi tận nơi để bạn xem trước.", "Đặt mẫu in thử miễn phí — không cam kết đặt hàng."],
+    "event_cuu_hoa": ["Có deadline event gấp? Inbox HOSO — sản xuất 2-3 ngày, giao tận nơi.", "HOSO chuyên cứu hỏa đơn gấp — gọi 0348 989 949 trước 16h, ngày mai có hàng."],
+    "khach_nho_sme": ["Mới mở shop, chỉ cần 200 túi cũng được — HOSO không ép số lượng. Inbox để báo giá.", "Test mẫu cho lô đầu tiên — HOSO làm 100 túi, không tốn vốn ôm hàng tồn."],
+    "forbidden": ["MUA NGAY!!!", "CHỐT ĐƠN LIỀN TAY", "INBOX NGAY KẺO LỠ", "SỐ LƯỢNG CÓ HẠN"]
+  },
+
+  "industries": {
+    "served": [
+      { "id": 1, "name": "F&B cà phê / trà sữa", "products": "Túi take-away, ly giấy, hộp bánh" },
+      { "id": 2, "name": "F&B bánh / dessert", "products": "Hộp bánh trung thu, hộp kem, túi bánh mì" },
+      { "id": 3, "name": "Thời trang local brand", "products": "Túi shopping, hộp giày, túi gift" },
+      { "id": 4, "name": "Mỹ phẩm / skincare", "products": "Hộp đựng sản phẩm, túi gift set" },
+      { "id": 5, "name": "Thực phẩm sạch / organic", "products": "Túi rau củ, gạo, hạt" },
+      { "id": 6, "name": "Làng nghề OCOP", "products": "Bao bì truyền thống cho sản phẩm OCOP", "priority": true }
+    ],
+    "refuse_list": {
+      "items": ["Rượu, bia, đồ uống có cồn", "Đồ thủy tinh, gốm sứ giá trị cao, đồ dễ vỡ", "Đồ đông lạnh, đồ có nước/ướt"],
+      "reason": "Giấy không chịu nước, không đủ cứng cho đồ nặng/dễ vỡ. KHÔNG pitch HOSO cho các ngành này."
+    }
+  },
+
+  "colors": {
+    "base": {
+      "primary": { "hex": "#78bc20", "rgb": "120,188,32", "cmyk": "58,2,100,0", "role": "logo, CTA chính" },
+      "primary_dark": { "hex": "#519600", "rgb": "81,150,0", "cmyk": "73,19,100,4", "role": "hover, accent, footer" },
+      "neutral_dark": { "hex": "#603a17", "role": "text trên nền sáng, vibe organic" },
+      "neutral_light": { "hex": "#f4e6d7", "role": "nền section, cảm giác giấy kraft" },
+      "white": { "hex": "#ffffff", "role": "nền chính" },
+      "black": { "hex": "#1a1a1a", "role": "text body — KHÔNG dùng đen tuyền #000000" }
+    },
+    "semantic": { "success": "#519600", "warning": "#e8a317", "error": "#c0392b", "info": "#3b7ea8" },
+    "critical_note": "PDF cũ ghi 'Color of brand: Vàng' là SAI. Primary thực sự là XANH LÁ #78bc20."
+  },
+
+  "typography": {
+    "heading": { "font": "Bricolage Grotesque", "weight": "700/800", "fallback": "Inter, system-ui" },
+    "body": { "font": "Lexend Deca", "weight": "400/500", "fallback": "Inter, system-ui" },
+    "body_emphasis": { "font": "Lexend Deca", "weight": "600" },
+    "quote": { "font": "Lora italic", "weight": "400 italic", "fallback": "Georgia" },
+    "mono": { "font": "JetBrains Mono", "weight": "400", "fallback": "Courier New", "use_for": "giá/mã/spec" },
+    "scale_desktop": { "h1": "48px/1.1/800", "h2": "36px/1.2/700", "h3": "24px/1.3/700", "h4": "20px/1.4/600", "body_large": "18px", "body": "16px", "body_small": "14px", "caption": "12px/500" },
+    "mobile": "80% scale (H1 → 38px, body giữ 16px)",
+    "rules": ["Tối đa 2 weight/trang", "Heading tracking -0.02em", "UPPERCASE max 4 từ", "Body không italic (chỉ trích dẫn/tên SP)"]
+  },
+
+  "photography": {
+    "style": "Rustic Vietnam — Cuộc sống bình dân",
+    "settings": ["hiên nhà gạch men", "sân quê", "chợ truyền thống", "quán cà phê vỉa hè", "mâm cơm gia đình", "ban thờ ngày rằm"],
+    "props": ["rổ tre", "nón lá", "gốm Bát Tràng", "lụa", "hoa cúc/sen/đào/mai", "lá chuối", "lạt buộc", "đèn lồng", "lì xì"],
+    "people": "Việt 25-60 tuổi, ưu tiên tay/lưng/chi tiết, không full face mẫu studio",
+    "grading": "warm 3200K-4500K, saturation vừa, contrast mềm, nền kem/gỗ nhạt/vải lanh/kraft; highlight #78bc20 chỉ qua sản phẩm, không overlay",
+    "forbidden": ["nhựa/túi nylon/hộp xốp (kể cả props gián tiếp)", "pastel teen (hồng/lavender/mint)", "AI-generated text overlay (overlay bằng Canva sau)", "AI vẽ logo HOSO (paste logo SVG vào sau)", "người mẫu Tây phương rõ"]
+  },
+
+  "cultural_calendar": {
+    "use": ["Tết Nguyên Đán", "Rằm tháng Giêng", "Giỗ Tổ Hùng Vương", "30/4-1/5", "Vu Lan", "Trung Thu", "20/10", "8/3", "20/11", "Noel & Tết Dương"],
+    "forbidden": ["Halloween, Valentine, Black Friday (chỉ dùng khi khách của HOSO trong ngành đó)", "cờ đảng / biểu tượng chính trị nhạy cảm", "slogan chính trị thuần"]
+  },
+
+  "approval_workflow": {
+    "_rule": "Output AI LUÔN cần con người duyệt lần cuối — không post thẳng.",
+    "rows": [
+      { "content": "Caption FB/IG hằng ngày", "writer": "Marketing / AI", "approver": "Marketing lead", "poster": "Marketing" },
+      { "content": "Email marketing campaign", "writer": "Marketing / AI", "approver": "Marketing lead", "poster": "Marketing" },
+      { "content": "Email B2B / báo giá", "writer": "Sale / AI", "approver": "Sale lead", "poster": "Sale" },
+      { "content": "Blog / case study", "writer": "Marketing / AI", "approver": "Founder", "poster": "Marketing" },
+      { "content": "Crisis / phản hồi xấu", "writer": "Founder", "approver": "Founder", "poster": "Founder" },
+      { "content": "Slogan, voice update", "writer": "Founder", "approver": "Founder", "poster": "cập nhật voice-guide qua PR" }
+    ]
+  },
+
+  "prepublish_checklist_7": [
+    "Có dùng từ allowlist ít nhất 2 lần?",
+    "Có né hết blocklist? (đặc biệt: không 'in offset', 'MOQ 500', '14 ngày', 'tái chế')",
+    "Không bịa số liệu/tên brand không có trong facts?",
+    "Xưng 'HOSO' + 'bạn' (default) hay đúng tình huống formal?",
+    "CTA rút từ cta_library, không tự bịa?",
+    "Có đứng về phía khách bị xưởng lớn bỏ rơi (mission core)?",
+    "Tone: chu đáo (Caregiver) + chút lửa khi nói craft/cứu hỏa (Creator)?"
+  ]
+}
