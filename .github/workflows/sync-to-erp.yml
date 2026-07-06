@@ -1,0 +1,30 @@
+# Sync 1 CHIỀU brand voice kit -> ERP (seam brand_voice_synced).
+# Push main chạm facts.json -> POST bản compile sang ERP. ERP KHÔNG có đường sửa ngược.
+# Secrets: ERP_SYNC_URL + ERP_AGENT_TOKEN (PAT hoso_agent_, thu hồi ở ERP > Cài đặt > Kết nối AI Agent).
+# Var tùy chọn: HOSO_BRAND_CODE (bỏ trống = brand mặc định).
+# Giám sát: cron brand-voice-freshness phía ERP so version 6h/lần, lệch là báo Lark.
+name: Sync brand voice to ERP
+on:
+  push:
+    branches: [main]
+    paths: [facts.json]
+  workflow_dispatch:
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Push facts.json to ERP
+        env:
+          ERP_SYNC_URL: ${{ secrets.ERP_SYNC_URL }}
+          ERP_AGENT_TOKEN: ${{ secrets.ERP_AGENT_TOKEN }}
+          HOSO_BRAND_CODE: ${{ vars.HOSO_BRAND_CODE }}
+        run: |
+          VERSION=$(jq -r '._meta.version // empty' facts.json)
+          test -n "$VERSION" || { echo "facts.json thiếu _meta.version"; exit 1; }
+          jq -n --arg v "$VERSION" --arg bc "${HOSO_BRAND_CODE:-}" --slurpfile f facts.json \
+            '{version: $v, compiled: $f[0]} + (if $bc != "" then {brand_code: $bc} else {} end)' > body.json
+          curl -fsS -X POST "$ERP_SYNC_URL" \
+            -H "Authorization: Bearer $ERP_AGENT_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data-binary @body.json
