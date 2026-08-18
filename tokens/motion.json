@@ -1,0 +1,43 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "_note": "Motion + video tokens. Bổ sung cho colors/typography/spacing — dùng khi dựng video fanpage, Reel, TikTok. Nguồn sự thật cho mọi công cụ dựng (Remotion, After Effects, CapCut, Canva).",
+  "format": {
+    "reel": { "$value": "1080x1920", "$description": "Reel / TikTok / Story. Mặc định cho video ngắn.", "fps": 30, "aspect": "9:16" },
+    "feed": { "$value": "1080x1350", "$description": "Video post trên feed Facebook.", "fps": 30, "aspect": "4:5" }
+  },
+  "safeArea": {
+    "_note": "Vùng UI nền tảng đè lên video. Chữ và logo KHÔNG được nằm ngoài vùng an toàn — đây là lỗi hay gặp nhất khi đăng Reel.",
+    "reel": {
+      "top":    { "$value": "12%", "$description": "Avatar, tên trang, nút back." },
+      "bottom": { "$value": "22%", "$description": "Caption, tên nhạc, thanh tiến trình." },
+      "right":  { "$value": "14%", "$description": "Cột nút like/comment/share." },
+      "left":   { "$value": "5%" }
+    },
+    "feed": { "top": { "$value": "6%" }, "bottom": { "$value": "10%" }, "right": { "$value": "5%" }, "left": { "$value": "5%" } }
+  },
+  "duration": {
+    "instant":    { "$value": "120ms", "$description": "Đổi trạng thái nhỏ." },
+    "quick":      { "$value": "220ms", "$description": "Chữ vào, badge bật." },
+    "base":       { "$value": "360ms", "$description": "Mặc định cho hầu hết chuyển động." },
+    "slow":       { "$value": "600ms", "$description": "Lộ logo, chuyển cảnh lớn." },
+    "sceneMin":   { "$value": "1600ms", "$description": "Cảnh ngắn nhất — dưới mức này người xem không kịp đọc." },
+    "endCardMin": { "$value": "2500ms", "$description": "End card phải đứng đủ lâu để đọc hết hotline." }
+  },
+  "easing": {
+    "press":      { "$value": "cubic-bezier(0.16, 0.90, 0.20, 1)", "$description": "Easing chủ đạo HOSO: vào nhanh, dừng dứt khoát, lắng nhẹ — mô phỏng con dấu chạm mặt giấy. Dùng cho chữ và logo." },
+    "decelerate": { "$value": "cubic-bezier(0.00, 0.00, 0.20, 1)", "$description": "Camera đẩy/kéo trên ảnh tĩnh." },
+    "standard":   { "$value": "cubic-bezier(0.40, 0.00, 0.20, 1)", "$description": "Chuyển cảnh trung tính." }
+  },
+  "cameraOnStills": {
+    "_note": "Ảnh tĩnh phải có chuyển động, nhưng không trôi lững lờ hai chiều kiểu Ken Burns mặc định — bắt đầu đã chạy rồi giảm tốc.",
+    "maxZoomPerScene": { "$value": 1.18, "$description": "Zoom quá mức lộ vỡ hạt, trông rẻ tiền." },
+    "easing": { "$value": "decelerate" }
+  },
+  "subtitle": {
+    "_note": "Đa số người xem Reel tắt tiếng. Phụ đề bắt buộc, trừ khi chữ động đã mang trọn lời thoại.",
+    "minFontSize":       { "$value": "44px", "$description": "Ở khung rộng 1080. Nhỏ hơn là không đọc nổi trên điện thoại." },
+    "backgroundColor":   { "$value": "#1a1a1a", "$description": "KHÔNG dùng #000000 — trái token neutral.black." },
+    "backgroundOpacity": { "$value": 0.62 },
+    "position":          { "$value": "trên mép safeArea.bottom" }
+  }
+}

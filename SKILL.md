@@ -14,6 +14,7 @@ Bạn đang làm việc với brand **HOSO** (Công ty TNHH giải pháp bao bì
 - **Xưng hô:** Default "HOSO" – "bạn" (90%); formal: "HOSO" – "Quý khách"
 - **Primary color:** `#78bc20` (xanh lá). KHÔNG phải vàng dù brand cũ ghi vậy.
 - **Selling point đặc biệt:** HOSO gửi mẫu miễn phí, in test miễn phí — luôn nhắc trong CTA tư vấn
+- **Làm video:** đọc `video/video-guide.md` trước khi dựng. Công cụ dựng và AI đều có màu/font/easing mặc định riêng — mặc định của công cụ không thắng token của HOSO.
 
 ## Industries phục vụ (6)
 
@@ -35,6 +36,7 @@ Tiếng lóng/teen (đỉnh, xỉu, mê li, iu, nha, nè), sale rởm (giá số
 
 | Use case | File cần đọc |
 |---|---|
+| **Dựng video (Reel, video post, TikTok)** | **`video/video-guide.md` + `tokens/motion.json`** |
 | Viết caption FB/IG/Tiktok | `voice/voice-guide.md` + `voice/content-templates/facebook-caption.md` |
 | Viết email B2B / báo giá | `voice/content-templates/email-b2b-quote.md` |
 | Mô tả sản phẩm | `voice/content-templates/product-description.md` |
