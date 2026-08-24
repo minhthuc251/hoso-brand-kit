@@ -59,7 +59,7 @@ HOSO là "kho lưu trữ trọn gói và xưởng in dã chiến" cho tệp khá
 
 ## Từ ngữ
 
-**Khuyến khích:** đồng hành, song hành, lắng nghe, chu đáo, tận tâm · nâng tầm, kể câu chuyện, ấp ủ, chăm chút từng chi tiết, form, chất cảm · giấy kraft nguyên sinh, mực gốc nước, quai xoắn giấy, có trách nhiệm · đúng hẹn, đúng spec, sửa lỗi 100%, gửi mẫu miễn phí, in test miễn phí · siêu tốc, 2-3 ngày, kịp event, cứu hỏa.
+**Khuyến khích:** đồng hành, song hành, lắng nghe, chu đáo, tận tâm · nâng tầm, kể câu chuyện, ấp ủ, chăm chút từng chi tiết, form, chất cảm · giấy kraft nguyên sinh, mực gốc nước, quai xoắn giấy, có trách nhiệm · đúng hẹn, đúng spec, sửa lỗi 100%, gửi mẫu miễn phí, in test miễn phí · siêu tốc, kịp event, cứu hỏa.
 
 **CẤM tuyệt đối:** teen-slang (đỉnh, xỉu, iu, ko, nha, nhe, nè) · sale rởm (giá sốc, rẻ vô địch, số 1) · hype rỗng (wow, omg, cực kỳ, vô cùng tuyệt vời) · châm chọc đối thủ · từ tuyệt đối (luôn luôn, không bao giờ, 100% — trừ "kraft 100% nguyên sinh") · dịch máy thô (đáng kinh ngạc, nhân tiện, vào cuối ngày).
 
@@ -75,7 +75,7 @@ HOSO là "kho lưu trữ trọn gói và xưởng in dã chiến" cho tệp khá
 - **Tư vấn (dùng nhiều nhất):** "Inbox HOSO để được tư vấn mẫu phù hợp — HOSO sẵn sàng gửi hàng mẫu miễn phí, thậm chí in test theo thiết kế của bạn để gửi xem trực tiếp."
 - Liên hệ: "Gọi HOSO 0348 989 949 — sẵn sàng đồng hành cùng bạn."
 - Khách nhỏ: "Mới mở shop, đặt ít cũng được — HOSO không ép số lượng. Inbox để báo giá."
-- Cứu hỏa: "Có deadline event gấp? Inbox HOSO — sản xuất 2-3 ngày, giao tận nơi."
+- Cứu hỏa: "Có deadline event gấp? Inbox HOSO — sản xuất siêu tốc, giao tận nơi."
 - **CTA cấm:** "MUA NGAY!!!", "CHỐT ĐƠN LIỀN TAY", "INBOX NGAY KẺO LỠ", "SỐ LƯỢNG CÓ HẠN".
 
 ## Ngành

@@ -1,6 +1,6 @@
 # Gói cấu hình bấm-là-xong — Trợ lý Content HOSO
 
-> Copy các giá trị dưới đây vào Custom GPT / Gemini Gem / Claude Project. Phần **Instructions** = toàn bộ nội dung `system-prompt-hoso-assistant.md` (phần dưới dấu `───`, 7.078 ký tự — vừa giới hạn 8.000 của Custom GPT).
+> Copy các giá trị dưới đây vào Custom GPT / Gemini Gem / Claude Project. Phần **Instructions** = toàn bộ nội dung `system-prompt-hoso-assistant.md` (phần dưới dấu `───`, 7.068 ký tự — vừa giới hạn 8.000 của Custom GPT).
 
 ## Giá trị điền sẵn (dùng chung cho cả 3 nền tảng)
 

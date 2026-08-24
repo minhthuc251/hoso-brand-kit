@@ -132,7 +132,7 @@ Cụ thể trong text:
 đồng hành · song hành · cùng bạn · hỗ trợ · lắng nghe · tư vấn · chu đáo · tận tâm · sẵn sàng · luôn ở bên · giúp bạn · đáp ứng · đảm bảo
 
 ### Nhóm 2 — Tốc độ (vũ khí sinh tử)
-nhanh · siêu tốc · 2-3 ngày · kịp event · cuốn chiếu · cứu hỏa · không chậm · đúng deadline · gấp được · kịp giờ G
+nhanh · siêu tốc · kịp event · cuốn chiếu · cứu hỏa · không chậm · đúng deadline · gấp được · kịp giờ G
 
 ### Nhóm 3 — Cho đi không toan tính (Core Value 2)
 miễn phí · gửi mẫu miễn phí · in test miễn phí · file gốc tặng · không cam kết · xem trước khi đặt · trải nghiệm thử
@@ -231,7 +231,7 @@ giấy kraft nguyên sinh · mực gốc nước · quai xoắn giấy · phân 
 - "Đặt mẫu in thử miễn phí — không cam kết đặt hàng."
 
 ### CTA cho event/cứu hỏa
-- "Có deadline event gấp? Inbox HOSO — sản xuất 2-3 ngày, giao tận nơi."
+- "Có deadline event gấp? Inbox HOSO — sản xuất siêu tốc, giao tận nơi."
 - "HOSO chuyên cứu hỏa đơn gấp — gọi 0348 989 949 trước 16h, ngày mai có hàng."
 
 ### CTA cho khách nhỏ (SME)
