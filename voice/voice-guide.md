@@ -27,7 +27,7 @@ Mission này phải thấm vào mọi câu HOSO nói. Khi viết, hãy hỏi: **
 
 ## 2. Sản phẩm & Dịch vụ — facts CHÍNH XÁC
 
-> AI hay viết sai vì training data có "in offset" / "MOQ 500" mặc định. Phải override bằng facts thực sau:
+> AI hay viết sai vì training data có "in offset" mặc định. Phải override bằng facts thực sau (chất liệu/kỹ thuật — cố định):
 
 | Aspect | Sự thật HOSO |
 |---|---|
@@ -36,10 +36,9 @@ Mission này phải thấm vào mọi câu HOSO nói. Khi viết, hãy hỏi: **
 | Mực | **Mực gốc nước** thấm thẳng vào giấy |
 | Quai | Quai xoắn giấy thủ công (KHÔNG ruy băng nilon) |
 | In | **In phun kỹ thuật số (in KTS)** — KHÔNG offset |
-| MOQ | **Linh hoạt — không ép MOQ với khách nhỏ** |
-| Lead time | **2-3 ngày sản xuất** — siêu tốc |
 | Kênh | Top 1 Shopee · website · hotline `0348 989 949` |
-| Free sample | Gửi mẫu thật + in test theo design khách, miễn phí |
+
+> **MOQ, lead time, chính sách mẫu miễn phí đã DỜI khỏi bảng này.** Số vận hành đổi liên tục, sống ở ERP `hoso_erp.business_facts` (có owner + ngày hiệu lực + audit trail) — bảng cứng ở đây từng lệch với ERP thật (kit từng tự đặt một sàn MOQ cứng trong khi ERP linh hoạt hơn hẳn; kit từng gộp 2 mức lead time thường/hoả tốc thành một mức duy nhất). Cần số cụ thể thì tra ERP hoặc hỏi người phụ trách — đừng gõ tay số mới vào bảng này, đó chính là cách bảng cũ đã lệch. Chi tiết: `facts.json › product_facts_ref`.
 
 ### Vì sao trong phun KTS thay vì offset?
 

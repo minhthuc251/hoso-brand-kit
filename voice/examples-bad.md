@@ -244,18 +244,18 @@
 
 ---
 
-## K. Sai do industry mismatch / refuse list
+## K. Sai do industry mismatch / discourage list
 
 ### Bad #20
 > ❌ "HOSO làm bao bì cho mọi ngành — từ rượu vang cao cấp đến đồ thủy tinh, đông lạnh, mọi thứ HOSO làm được hết!"
 
 **Sai gì:**
-- HOSO **KHÔNG phục vụ rượu/thủy tinh/đông lạnh** (refuse list — giấy không chịu nước/đồ nặng/dễ vỡ)
+- HOSO **không chủ động chào mời** ngành rượu/thủy tinh/đông lạnh (discourage list — giấy không chịu nước, không đủ cứng cho đồ nặng/dễ vỡ). Không phải cấm tuyệt đối — khách ngành này chủ động hỏi thì HOSO vẫn tư vấn thật — nhưng câu trên đang tự đi PITCH các ngành đó, sai đúng chỗ cấm.
 - "mọi ngành" + "mọi thứ" — overclaim
 - Sẽ dẫn đến khách kỳ vọng sai → phàn nàn sau
 
 **Fix:**
-> ✅ "HOSO chuyên bao bì giấy cho: shop SME (thời trang, mỹ phẩm, quà tặng), cafe take-away, sự kiện/event, sản phẩm thủ công. Cho rượu/thủy tinh/đông lạnh, HOSO khuyến nghị tham khảo bao bì chuyên dụng khác — không phải giấy."
+> ✅ "HOSO chuyên bao bì giấy cho: shop SME (thời trang, mỹ phẩm, quà tặng), cafe take-away, sự kiện/event, sản phẩm thủ công. Rượu/thủy tinh/đông lạnh thì giấy không chống nước và không đủ cứng — đang cân nhắc mảng đó thì cứ hỏi thẳng HOSO, HOSO nói thật để bạn tự quyết định có hợp không."
 
 ---
 

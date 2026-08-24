@@ -168,11 +168,14 @@ Tết Nguyên Đán, Rằm tháng Giêng, Giỗ Tổ Hùng Vương, 30/4–1/5, 
 | 5 | Thực phẩm sạch / organic | Túi rau củ, gạo, hạt | Làng quê, vườn, nắng sớm |
 | 6 | **Làng nghề OCOP** ⭐ | Bao bì truyền thống cho sản phẩm OCOP | Làng nghề, nghệ nhân, di sản |
 
-### Refuse list (KHÔNG phục vụ)
+### Discourage list — KHÔNG chủ động chào mời (cập nhật 2026-08-24, xem mục "Lịch sử quyết định")
+> Tên gốc phiên bản 2026-04-28 là "Refuse list (KHÔNG phục vụ)". Founder làm mềm 2026-08-24: đây không còn là từ chối cứng.
 - Rượu, bia, đồ uống có cồn
 - Đồ thủy tinh, gốm sứ giá trị cao, đồ dễ vỡ
 - Đồ đông lạnh, đồ có nước/ướt
 - **Lý do:** giấy không chịu nước, không đủ cứng cho đồ nặng/dễ vỡ
+- **Được làm:** nếu khách các ngành trên chủ động hỏi, HOSO tư vấn thật (nói rõ giới hạn của giấy)
+- **Không được làm:** chủ động pitch/chào mời HOSO cho các ngành này
 
 ---
 
@@ -386,3 +389,4 @@ hoso-brand-kit/
 ## Lịch sử quyết định
 
 - 2026-04-28: v1.0 — Output session grill-me. CEO @minhthuc251 chốt 14 quyết định.
+- 2026-08-24: Founder chốt 2 thay đổi, phản ánh trong `facts.json` v0.4.0: (1) §7 Refuse list → Discourage list — không còn từ chối cứng, chỉ không chủ động chào mời; khách hỏi thì vẫn tư vấn thật. (2) Xác nhận HOSO dùng có chủ đích 2 kiểu xưng hô theo kênh — content một-chiều giữ "HOSO"–"bạn" (§3), chat 1-1 (chatbot web/Meta/Zalo) dùng "em"–"anh/chị" (mới, xem `facts.json › voice_channel_overrides`). Đồng thời: `product_facts` trong `facts.json` thu hẹp lại đúng phần kit sở hữu (chất liệu/kỹ thuật in) — số vận hành (MOQ, lead time, mẫu miễn phí) chuyển hẳn sang ERP `hoso_erp.business_facts`, kit chỉ giữ con trỏ (`product_facts_ref`), không giữ bản sao.
