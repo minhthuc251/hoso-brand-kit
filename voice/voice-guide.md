@@ -27,7 +27,7 @@ Mission này phải thấm vào mọi câu HOSO nói. Khi viết, hãy hỏi: **
 
 ## 2. Sản phẩm & Dịch vụ — facts CHÍNH XÁC
 
-> AI hay viết sai vì training data có "in offset" / "MOQ 500" mặc định. Phải override bằng facts thực sau:
+> AI hay viết sai vì training data có "in offset" mặc định. Phải override bằng facts thực sau (chất liệu/kỹ thuật — cố định):
 
 | Aspect | Sự thật HOSO |
 |---|---|
@@ -36,10 +36,9 @@ Mission này phải thấm vào mọi câu HOSO nói. Khi viết, hãy hỏi: **
 | Mực | **Mực gốc nước** thấm thẳng vào giấy |
 | Quai | Quai xoắn giấy thủ công (KHÔNG ruy băng nilon) |
 | In | **In phun kỹ thuật số (in KTS)** — KHÔNG offset |
-| MOQ | **Linh hoạt — không ép MOQ với khách nhỏ** |
-| Lead time | **2-3 ngày sản xuất** — siêu tốc |
 | Kênh | Top 1 Shopee · website · hotline `0348 989 949` |
-| Free sample | Gửi mẫu thật + in test theo design khách, miễn phí |
+
+> **MOQ, lead time, chính sách mẫu miễn phí đã DỜI khỏi bảng này.** Số vận hành đổi liên tục, sống ở ERP `hoso_erp.business_facts` (có owner + ngày hiệu lực + audit trail) — bảng cứng ở đây từng lệch với ERP thật (kit từng tự đặt một sàn MOQ cứng trong khi ERP linh hoạt hơn hẳn; kit từng gộp 2 mức lead time thường/hoả tốc thành một mức duy nhất). Cần số cụ thể thì tra ERP hoặc hỏi người phụ trách — đừng gõ tay số mới vào bảng này, đó chính là cách bảng cũ đã lệch. Chi tiết: `facts.json › product_facts_ref`.
 
 ### Vì sao trong phun KTS thay vì offset?
 
@@ -133,13 +132,13 @@ Cụ thể trong text:
 đồng hành · song hành · cùng bạn · hỗ trợ · lắng nghe · tư vấn · chu đáo · tận tâm · sẵn sàng · luôn ở bên · giúp bạn · đáp ứng · đảm bảo
 
 ### Nhóm 2 — Tốc độ (vũ khí sinh tử)
-nhanh · siêu tốc · 2-3 ngày · kịp event · cuốn chiếu · cứu hỏa · không chậm · đúng deadline · gấp được · kịp giờ G
+nhanh · siêu tốc · kịp event · cuốn chiếu · cứu hỏa · không chậm · đúng deadline · gấp được · kịp giờ G
 
 ### Nhóm 3 — Cho đi không toan tính (Core Value 2)
 miễn phí · gửi mẫu miễn phí · in test miễn phí · file gốc tặng · không cam kết · xem trước khi đặt · trải nghiệm thử
 
 ### Nhóm 4 — Che chở dòng vốn (Core Value 3)
-không ép số lượng · 100 túi cũng làm · linh hoạt MOQ · không tồn vốn · lưu kho miễn phí · xả cuốn chiếu · không phải mua thừa
+không ép số lượng · đơn nhỏ cũng làm · linh hoạt MOQ · không tồn vốn · lưu kho miễn phí · xả cuốn chiếu · không phải mua thừa
 
 ### Nhóm 5 — Bản sắc (Creator + craft)
 nâng tầm · kể câu chuyện · thiết kế riêng · tinh chỉnh · ấp ủ · chăm chút từng chi tiết · form · chất cảm · gu · cảm hứng · dấu ấn
@@ -174,8 +173,8 @@ giấy kraft nguyên sinh · mực gốc nước · quai xoắn giấy · phân 
 
 ### ⛔ ĐẶC BIỆT — Sai về sản phẩm HOSO
 - ~~"in offset"~~ → phải dùng "in phun KTS" hoặc "in kỹ thuật số"
-- ~~"MOQ 500"~~ / ~~"đặt tối thiểu 1.000 cái"~~ → phải dùng "không ép MOQ" hoặc "100 túi cũng làm được"
-- ~~"lead time 14 ngày"~~ / ~~"sản xuất 2 tuần"~~ → phải dùng "2-3 ngày" hoặc "siêu tốc"
+- ~~"MOQ 500"~~ / ~~"đặt tối thiểu 1.000 cái"~~ → phải dùng "không ép MOQ" hoặc "đơn nhỏ cũng làm được"
+- ~~"lead time 14 ngày"~~ / ~~"sản xuất 2 tuần"~~ → phải dùng "sản xuất nhanh" (số ngày cụ thể hỏi người phụ trách — có mức thường/hoả tốc khác nhau, đừng gộp thành một số)
 - ~~"giấy tái chế"~~ → phải dùng "kraft nguyên sinh nhập khẩu"
 
 ### ⛔ Số liệu/tên BỊA — TUYỆT ĐỐI KHÔNG
@@ -220,7 +219,7 @@ giấy kraft nguyên sinh · mực gốc nước · quai xoắn giấy · phân 
 > *"Inbox HOSO để được tư vấn mẫu phù hợp — HOSO sẵn sàng gửi hàng mẫu miễn phí, thậm chí in test theo thiết kế của bạn để gửi xem trực tiếp."*
 
 ### Variants ngắn (cho Tiktok/IG)
-- "Inbox HOSO — gửi mẫu miễn phí 2-3 ngày, không ép số lượng."
+- "Inbox HOSO — gửi mẫu miễn phí, không ép số lượng."
 - "Nhắn HOSO để in test miễn phí theo design của bạn."
 
 ### CTA "liên hệ"
@@ -232,11 +231,11 @@ giấy kraft nguyên sinh · mực gốc nước · quai xoắn giấy · phân 
 - "Đặt mẫu in thử miễn phí — không cam kết đặt hàng."
 
 ### CTA cho event/cứu hỏa
-- "Có deadline event gấp? Inbox HOSO — sản xuất 2-3 ngày, giao tận nơi."
+- "Có deadline event gấp? Inbox HOSO — sản xuất siêu tốc, giao tận nơi."
 - "HOSO chuyên cứu hỏa đơn gấp — gọi 0348 989 949 trước 16h, ngày mai có hàng."
 
 ### CTA cho khách nhỏ (SME)
-- "Mới mở shop, chỉ cần 200 túi cũng được — HOSO không ép số lượng. Inbox để báo giá."
+- "Mới mở shop, đặt ít cũng được — HOSO không ép số lượng. Inbox để báo giá."
 - "Test mẫu cho lô đầu tiên — HOSO làm 100 túi, không tốn vốn ôm hàng tồn."
 
 ### CTA cấm
