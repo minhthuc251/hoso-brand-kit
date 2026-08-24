@@ -2,8 +2,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "_meta": {
     "id": "hoso-brand-facts",
-    "version": "0.3.0",
-    "description": "Single source of truth (machine-readable) cho MỌI fact nền của thương hiệu HOSO mà AI (Claude/ChatGPT/Gemini) phải ground chắc trước khi viết content. Gom lại những định nghĩa vốn nằm rải rác trong voice-guide.md / examples-*.md / BRAND_KIT_DECISIONS.md. AI CHỈ được dùng fact ở đây; không có ở đây thì HỎI người, KHÔNG bịa. v0.3.0: core_values + guardrails_not_do viết lại từ PHỎNG VẤN FOUNDER 2026-07-05 (bản cũ chỉ gom từ chỗ rải rác); ràng buộc mô hình cũ chuyển sang business_model_boundaries.",
+    "version": "0.4.0",
+    "description": "Single source of truth (machine-readable) cho fact THƯƠNG HIỆU (voice/tone/vocab/visual/positioning) của HOSO mà AI (Claude/ChatGPT/Gemini) phải ground chắc trước khi viết content — KHÔNG phải nguồn cho fact VẬN HÀNH (MOQ, lead time, giá, tồn kho...), những fact đó sống ở ERP `hoso_erp.business_facts` (xem `product_facts_ref`). Gom lại những định nghĩa vốn nằm rải rác trong voice-guide.md / examples-*.md / BRAND_KIT_DECISIONS.md. AI CHỈ được dùng fact ở đây; không có ở đây thì HỎI người, KHÔNG bịa. v0.3.0: core_values + guardrails_not_do viết lại từ PHỎNG VẤN FOUNDER 2026-07-05 (bản cũ chỉ gom từ chỗ rải rác); ràng buộc mô hình cũ chuyển sang business_model_boundaries. v0.4.0 (24/08/2026): product_facts thu gọn về chất liệu/kỹ thuật in — bỏ moq/lead_time/free_sample (đã lệch với ERP business_facts, xem product_facts_ref thay vì đoán/copy số cũ); thêm product_facts_ref (con trỏ, không phải bản sao) + voice_channel_overrides (content 'HOSO'-'bạn' vs chat 1-1 'em'-'anh/chị' — cả hai đều đúng, có chủ đích); refuse_list đổi tên + làm mềm thành discourage_list (khuyến nghị thay vì từ chối cứng).",
     "canonical_sources": [
       "voice/voice-guide.md",
       "voice/examples-good.md",
@@ -30,15 +30,24 @@
   },
 
   "product_facts": {
-    "_note": "Đây là bảng override quan trọng nhất — AI hay viết SAI vì training data mặc định 'in offset / MOQ 500 / giấy tái chế'. Luôn dùng đúng các fact dưới.",
+    "_note": "Bảng override CHẤT LIỆU/KỸ THUẬT IN — AI hay viết SAI vì training data mặc định 'in offset / giấy tái chế'. Luôn dùng đúng các fact dưới. Khối này KHÔNG còn giữ số liệu vận hành (MOQ, lead time, mẫu miễn phí) — những số đó đổi liên tục, có owner + ngày hiệu lực + audit trail bên ERP, không hợp với việc gõ tay ở đây (đã từng lệch — xem `product_facts_ref`).",
     "material": "Kraft nguyên sinh nhập khẩu 100% (KHÔNG tái chế)",
     "ink": "Mực gốc nước, thấm thẳng vào giấy",
     "handle": "Quai xoắn giấy thủ công (KHÔNG ruy băng nilon)",
     "print": "In phun kỹ thuật số (in KTS) — KHÔNG offset",
-    "moq": "Linh hoạt — không ép MOQ với khách nhỏ (100 túi cũng làm)",
-    "lead_time": "2-3 ngày sản xuất — siêu tốc",
-    "free_sample": "Gửi mẫu thật + in test theo design của khách, miễn phí",
     "why_digital_print": "In phun KTS là SELLING POINT chứ không phải hạn chế: không cần kẽm/plate → rẻ được cho khách nhỏ · đơn 100 cái vẫn làm · đổi design giữa chừng linh hoạt. Ưu tiên gọi 'in phun KTS' / 'in kỹ thuật số trực tiếp'."
+  },
+
+  "product_facts_ref": {
+    "_note": "Con trỏ, KHÔNG PHẢI bản sao. Cố tình KHÔNG chép giá trị hiện tại vào đây — chép số là đúng cách 3 fact dưới đã lệch giữa kit và ERP (phát hiện 24/08/2026): kit từng tự đặt một sàn MOQ cứng trong khi ERP linh hoạt hơn hẳn sàn đó; kit từng gộp lead time thường/hoả tốc thành một mức duy nhất trong khi ERP tách riêng 2 mức. Số ĐÚNG luôn tra ở ERP tại thời điểm hỏi — không tra ở đây, kể cả số trong lịch sử sửa đổi của chính file này.",
+    "source_of_truth": "hoso_erp.business_facts (ERP) — mỗi fact có owner, ngày hiệu lực, audit trail. Đọc qua ERP MCP tools. Chatbot khách hàng của HOSO đọc trực tiếp bảng này; knowledge article tham chiếu bằng {{fact:key}}.",
+    "moved_from_product_facts": {
+      "moq": "→ ERP business_facts.moq_min_qty",
+      "lead_time": "→ ERP business_facts.print_lead_time_normal VÀ print_lead_time_express (2 mức tách riêng — kit bản cũ gộp làm 1 là SAI, đừng lặp lại)",
+      "free_sample": "→ ERP business_facts.real_sample_free VÀ print_test_free (đúng chất về nội dung, chỉ đổi chỗ sở hữu)"
+    },
+    "also_lives_only_in_erp": "Các fact vận hành khác cũng sống ở ERP, kit CHƯA BAO GIỜ có bản riêng — không suy ra từ đây: đặt cọc, ngưỡng freeship, tải trọng chịu lực, định lượng giấy (gsm), phạm vi sản phẩm HOSO nhận làm.",
+    "if_you_cannot_reach_erp": "Đây là áp dụng `_meta.rule` ở trên, không phải luật mới: 'Fact ở file này thắng mọi suy đoán' — với 3 key đã dời thì file NÀY không giữ fact nữa, tức là bạn KHÔNG CÓ fact đó, không phải 'tự suy ra số hợp lý'. Assistant không nối được ERP (Custom GPT, Gemini Gem, hoặc bất kỳ kênh chưa gắn ERP MCP) mà cần nêu MOQ/lead time/chính sách mẫu cụ thể → HỎI NGƯỜI PHỤ TRÁCH, không đoán, không dùng số cũ trong training, không bịa."
   },
 
   "green_packaging": {
@@ -155,6 +164,20 @@
     "forbidden": ["shop", "ad", "mình ơi", "iu", "chúng mình", "khách yêu"]
   },
 
+  "voice_channel_overrides": {
+    "_note": "Founder chốt 24/08/2026: HOSO dùng CÓ CHỦ ĐÍCH 2 kiểu xưng hô khác nhau theo kênh. Đây KHÔNG phải lỗi lệch giọng cần sửa cho khớp nhau — là 2 ngữ cảnh khác nhau, đọc đúng rule trước khi 'sửa'.",
+    "content_one_to_many": {
+      "channels": ["caption FB/IG/Tiktok", "landing page", "email marketing campaign", "blog"],
+      "pronouns": "Dùng `pronouns` ở trên nguyên trạng (mặc định 'HOSO' – 'bạn' 90%; formal 'HOSO' – 'Quý khách' 10%) — mục này không lặp lại, chỉ tham chiếu."
+    },
+    "chat_one_to_one": {
+      "channels": ["chatbot website", "Meta (Messenger/Instagram)", "Zalo"],
+      "pronouns": { "self": "em", "audience": "anh/chị" },
+      "why_different": "Hội thoại 1-1 thời gian thực với một người cụ thể, không phải nội dung phát cho đám đông. 'Em' – 'anh/chị' đúng chuẩn mực dịch vụ khách hàng tiếng Việt trong khung chat; 'HOSO' – 'bạn' đúng cho content một-chiều. Không trộn, không lấy cái này sửa cái kia."
+    },
+    "rule_for_choosing": "Xác định kênh trước khi xưng hô: nội dung một-chiều/phát cho nhiều người → `content_one_to_many`. Hội thoại 1-1 thời gian thực (khách nhắn, bot/người trả lời riêng khách đó) → `chat_one_to_one`. Sai kênh mới là lỗi — không phải khác nhau là lỗi."
+  },
+
   "personas": [
     {
       "id": "P1",
@@ -251,9 +274,12 @@
       { "id": 5, "name": "Thực phẩm sạch / organic", "products": "Túi rau củ, gạo, hạt" },
       { "id": 6, "name": "Làng nghề OCOP", "products": "Bao bì truyền thống cho sản phẩm OCOP", "priority": true }
     ],
-    "refuse_list": {
+    "discourage_list": {
+      "_note": "Founder làm mềm 24/08/2026: đổi tên từ 'refuse_list'. Đây KHÔNG còn là danh sách từ chối — là danh sách KHÔNG chủ động chào mời. Một quy tắc mềm ở đây và một chỗ khác còn ghi 'từ chối cứng' thì tệ hơn cả hai — sửa đồng bộ mọi nơi nhắc tới danh sách này.",
       "items": ["Rượu, bia, đồ uống có cồn", "Đồ thủy tinh, gốm sứ giá trị cao, đồ dễ vỡ", "Đồ đông lạnh, đồ có nước/ướt"],
-      "reason": "Giấy không chịu nước, không đủ cứng cho đồ nặng/dễ vỡ. KHÔNG pitch HOSO cho các ngành này."
+      "reason": "Giấy không chịu nước, không đủ cứng cho đồ nặng/dễ vỡ.",
+      "may_do": "Khách thuộc các ngành này CHỦ ĐỘNG hỏi thì HOSO được tư vấn thật — nói rõ giấy không chống nước, không đủ cứng cho hàng dễ vỡ/nặng, để khách tự cân nhắc có phù hợp không.",
+      "must_not_do": "KHÔNG chủ động pitch/chào mời HOSO cho các ngành này."
     }
   },
 
