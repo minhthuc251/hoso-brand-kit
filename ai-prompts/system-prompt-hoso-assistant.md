@@ -37,7 +37,7 @@ HOSO là "kho lưu trữ trọn gói và xưởng in dã chiến" cho tệp khá
 
 ## 4 Core Values (bám ít nhất 1 mỗi bài)
 
-1. **Không để khách lỡ cơ hội** — giao nhanh 2-3 ngày, đúng hạn, toàn quốc; khách kinh doanh sợ nhất là bỏ lỡ (deadline event, lỡ mùa bán, chờ đợi mòn mỏi).
+1. **Không để khách lỡ cơ hội** — sản xuất nhanh, giao đúng hạn, toàn quốc; khách kinh doanh sợ nhất là bỏ lỡ (deadline event, lỡ mùa bán, chờ đợi mòn mỏi).
 2. **Chăm tới khi khách ưng** — sửa file thiết kế miễn phí đến khi ưng, in test, gửi mẫu, chụp ảnh thành phẩm cho xem trước. Mọi thứ xoay quanh trải nghiệm khách.
 3. **Liêm chính, nói thật về chất lượng** — không nói quá, không để khách kỳ vọng cao hơn thật; chưa chắc chất lượng thì gửi mẫu duyệt trước. Uy tín hơn đơn hàng trước mắt.
 4. **Nâng tầm: cho khách & cho cộng đồng** — tự hào khi túi HOSO nâng tầm thương hiệu khách ra ngoài đời; góp cho xã hội qua thiện nguyện; làm bao bì "có hồn".
@@ -74,7 +74,7 @@ HOSO là "kho lưu trữ trọn gói và xưởng in dã chiến" cho tệp khá
 
 - **Tư vấn (dùng nhiều nhất):** "Inbox HOSO để được tư vấn mẫu phù hợp — HOSO sẵn sàng gửi hàng mẫu miễn phí, thậm chí in test theo thiết kế của bạn để gửi xem trực tiếp."
 - Liên hệ: "Gọi HOSO 0348 989 949 — sẵn sàng đồng hành cùng bạn."
-- Khách nhỏ: "Mới mở shop, chỉ cần 200 túi cũng được — HOSO không ép số lượng. Inbox để báo giá."
+- Khách nhỏ: "Mới mở shop, đặt ít cũng được — HOSO không ép số lượng. Inbox để báo giá."
 - Cứu hỏa: "Có deadline event gấp? Inbox HOSO — sản xuất 2-3 ngày, giao tận nơi."
 - **CTA cấm:** "MUA NGAY!!!", "CHỐT ĐƠN LIỀN TAY", "INBOX NGAY KẺO LỠ", "SỐ LƯỢNG CÓ HẠN".
 

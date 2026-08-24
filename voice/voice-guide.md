@@ -138,7 +138,7 @@ nhanh · siêu tốc · 2-3 ngày · kịp event · cuốn chiếu · cứu hỏ
 miễn phí · gửi mẫu miễn phí · in test miễn phí · file gốc tặng · không cam kết · xem trước khi đặt · trải nghiệm thử
 
 ### Nhóm 4 — Che chở dòng vốn (Core Value 3)
-không ép số lượng · 100 túi cũng làm · linh hoạt MOQ · không tồn vốn · lưu kho miễn phí · xả cuốn chiếu · không phải mua thừa
+không ép số lượng · đơn nhỏ cũng làm · linh hoạt MOQ · không tồn vốn · lưu kho miễn phí · xả cuốn chiếu · không phải mua thừa
 
 ### Nhóm 5 — Bản sắc (Creator + craft)
 nâng tầm · kể câu chuyện · thiết kế riêng · tinh chỉnh · ấp ủ · chăm chút từng chi tiết · form · chất cảm · gu · cảm hứng · dấu ấn
@@ -173,8 +173,8 @@ giấy kraft nguyên sinh · mực gốc nước · quai xoắn giấy · phân 
 
 ### ⛔ ĐẶC BIỆT — Sai về sản phẩm HOSO
 - ~~"in offset"~~ → phải dùng "in phun KTS" hoặc "in kỹ thuật số"
-- ~~"MOQ 500"~~ / ~~"đặt tối thiểu 1.000 cái"~~ → phải dùng "không ép MOQ" hoặc "100 túi cũng làm được"
-- ~~"lead time 14 ngày"~~ / ~~"sản xuất 2 tuần"~~ → phải dùng "2-3 ngày" hoặc "siêu tốc"
+- ~~"MOQ 500"~~ / ~~"đặt tối thiểu 1.000 cái"~~ → phải dùng "không ép MOQ" hoặc "đơn nhỏ cũng làm được"
+- ~~"lead time 14 ngày"~~ / ~~"sản xuất 2 tuần"~~ → phải dùng "sản xuất nhanh" (số ngày cụ thể hỏi người phụ trách — có mức thường/hoả tốc khác nhau, đừng gộp thành một số)
 - ~~"giấy tái chế"~~ → phải dùng "kraft nguyên sinh nhập khẩu"
 
 ### ⛔ Số liệu/tên BỊA — TUYỆT ĐỐI KHÔNG
@@ -219,7 +219,7 @@ giấy kraft nguyên sinh · mực gốc nước · quai xoắn giấy · phân 
 > *"Inbox HOSO để được tư vấn mẫu phù hợp — HOSO sẵn sàng gửi hàng mẫu miễn phí, thậm chí in test theo thiết kế của bạn để gửi xem trực tiếp."*
 
 ### Variants ngắn (cho Tiktok/IG)
-- "Inbox HOSO — gửi mẫu miễn phí 2-3 ngày, không ép số lượng."
+- "Inbox HOSO — gửi mẫu miễn phí, không ép số lượng."
 - "Nhắn HOSO để in test miễn phí theo design của bạn."
 
 ### CTA "liên hệ"
@@ -235,7 +235,7 @@ giấy kraft nguyên sinh · mực gốc nước · quai xoắn giấy · phân 
 - "HOSO chuyên cứu hỏa đơn gấp — gọi 0348 989 949 trước 16h, ngày mai có hàng."
 
 ### CTA cho khách nhỏ (SME)
-- "Mới mở shop, chỉ cần 200 túi cũng được — HOSO không ép số lượng. Inbox để báo giá."
+- "Mới mở shop, đặt ít cũng được — HOSO không ép số lượng. Inbox để báo giá."
 - "Test mẫu cho lô đầu tiên — HOSO làm 100 túi, không tốn vốn ôm hàng tồn."
 
 ### CTA cấm
