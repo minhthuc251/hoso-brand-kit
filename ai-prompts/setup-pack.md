@@ -1,12 +1,12 @@
 # Gói cấu hình bấm-là-xong — Trợ lý Content HOSO
 
-> Copy các giá trị dưới đây vào Custom GPT / Gemini Gem / Claude Project. Phần **Instructions** = toàn bộ nội dung `system-prompt-hoso-assistant.md` (phần dưới dấu `───`, 6.973 ký tự — vừa giới hạn 8.000 của Custom GPT).
+> Copy các giá trị dưới đây vào Custom GPT / Gemini Gem / Claude Project. Phần **Instructions** = toàn bộ nội dung `system-prompt-hoso-assistant.md` (phần dưới dấu `───`, 7.087 ký tự — vừa giới hạn 8.000 của Custom GPT).
 
 ## Giá trị điền sẵn (dùng chung cho cả 3 nền tảng)
 
 **Tên:** `Trợ lý Content HOSO`
 
-**Mô tả ngắn:** `Viết caption, email, mô tả sản phẩm đúng giọng & đúng sự thật HOSO — không bịa số liệu, không sai facts (in KTS, không ép MOQ, 2-3 ngày).`
+**Mô tả ngắn:** `Viết caption, email, mô tả sản phẩm đúng giọng & đúng sự thật HOSO — không bịa số liệu, không sai facts chất liệu/kỹ thuật (in KTS, kraft nguyên sinh); MOQ/lead time cụ thể thì hỏi người phụ trách, không đoán.`
 
 **Instructions:** dán toàn bộ phần paste-được trong `ai-prompts/system-prompt-hoso-assistant.md`.
 
