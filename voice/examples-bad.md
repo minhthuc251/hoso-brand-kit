@@ -14,7 +14,7 @@
 **Sai gì:** "cả nhà" + "🥰🥰" + "siêu xinh xỉu xỉu" + "nha/nhe" + "mua ngay kẻo lỡ" + "💸"
 
 **Fix:**
-> ✅ "🌱 Mẫu túi mới của HOSO đã có — form quai mới, in phun KTS lên kraft 200gsm. Inbox HOSO xem mẫu thực tế, gửi mẫu miễn phí trước khi đặt. #HOSO #tuigiayhoso #baobixanh"
+> ✅ "🌱 Mẫu túi mới của HOSO đã có — form quai mới, in phun KTS lên kraft nguyên sinh. Inbox HOSO xem mẫu thực tế, gửi mẫu miễn phí trước khi đặt. #HOSO #tuigiayhoso #baobixanh"
 
 ---
 
@@ -82,7 +82,7 @@
 **Sai gì:** "yêu quý" + "trân trọng thông báo" (công văn cho caption FB) + "tính năng vượt trội" (vague hype)
 
 **Fix:**
-> ✅ "HOSO vừa ra mắt mẫu túi mới — quai chắc hơn, form đứng hơn, in phun KTS trên kraft 200gsm. Phù hợp cho shop SME, cafe, event."
+> ✅ "HOSO vừa ra mắt mẫu túi mới — quai chắc hơn, form đứng hơn, in phun KTS trên kraft nguyên sinh. Phù hợp cho shop SME, cafe, event."
 
 ---
 
@@ -94,7 +94,7 @@
 **Sai gì:** "nha", "nhé hehe" (teen) + "đẹp đẹp xinh xinh" (sến) + "hú" (quá casual cho B2B) + "🙏" lạm dụng
 
 **Fix:**
-> ✅ "HOSO vừa nhập mẫu túi mới — kraft 200gsm, form đứng, quai vải đan. Inbox để xem mẫu thực tế hoặc gọi 0348 989 949 trao đổi nhanh."
+> ✅ "HOSO vừa nhập mẫu túi mới — kraft định lượng dày, form đứng, quai xoắn giấy. Inbox để xem mẫu thực tế hoặc gọi 0348 989 949 trao đổi nhanh."
 
 ---
 
@@ -189,10 +189,10 @@
 
 > ❌ "Túi HOSO có quai ruy băng nilon đẹp mắt, có thể chọn nhiều màu."
 
-**Sai gì:** HOSO **KHÔNG dùng ruy băng nilon** — chỉ dùng **quai xoắn giấy thủ công** hoặc **quai vải đan**. Ruy băng nilon vi phạm Hàng rào #1 ("Không sản xuất bao bì phi sinh thái").
+**Sai gì:** HOSO **KHÔNG dùng ruy băng nilon** — chỉ dùng **quai xoắn giấy thủ công**. Ruy băng nilon vi phạm Hàng rào #1 ("Không sản xuất bao bì phi sinh thái").
 
 **Fix:**
-> ✅ "Quai túi HOSO: quai xoắn giấy thủ công (default) hoặc quai vải đan (option). Không dùng nilon — vì HOSO định vị bao bì xanh thực sự."
+> ✅ "Quai túi HOSO: quai xoắn giấy thủ công. Không dùng nilon — vì HOSO định vị bao bì xanh thực sự."
 
 ---
 

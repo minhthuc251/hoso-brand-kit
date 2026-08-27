@@ -106,7 +106,7 @@ Cụ thể trong text:
 
 - ❌ Quá formal: *"Kính gửi Quý khách hàng, HOSO trân trọng thông báo về việc ra mắt sản phẩm túi giấy phiên bản mới..."*
 - ❌ Quá casual: *"Heyyy mọi người ơi, túi mới về rồi nè, đẹp xỉu luôn 🥰"*
-- ✅ Đúng tone: *"HOSO vừa hoàn thiện form túi mới — đứng hơn, quai chắc hơn, in phun KTS lên kraft 200gsm. Mẫu test miễn phí với logo của bạn — gửi trong 3 ngày."*
+- ✅ Đúng tone: *"HOSO vừa hoàn thiện form túi mới — đứng hơn, quai chắc hơn, in phun KTS lên kraft nguyên sinh. Mẫu test miễn phí với logo của bạn."*
 
 ---
 
@@ -302,9 +302,9 @@ Khách lớn cần MOQ cực cao (>50.000 cái/đơn) yêu cầu in offset 8 mà
 
 | Dịp | Tone phụ | Mood |
 |---|---|---|
-| Tết Nguyên Đán | Hoài niệm, sum vầy | Mai/đào/lì xì, hộp Tết — đặt sớm tránh tắc deadline cuối năm |
-| Trung Thu | Đoàn viên, gia đình | Hộp bánh trung thu, đèn lồng |
-| 8/3, 20/10, 20/11 | Trân trọng, biết ơn | Hộp gift, túi gift |
+| Tết Nguyên Đán | Hoài niệm, sum vầy | Mai/đào, túi Tết in sẵn — đặt sớm tránh tắc deadline cuối năm |
+| Trung Thu | Đoàn viên, gia đình | Túi Trung Thu in sẵn, đèn lồng |
+| 8/3, 20/10, 20/11 | Trân trọng, biết ơn | Túi in sẵn theo dịp, túi gift |
 | 30/4, 2/9, Giỗ Tổ | Tự hào dân tộc nhẹ | "Bao bì Việt cho thương hiệu Việt" |
 | Vu Lan | Biết ơn, hiếu nghĩa | Caregiver, không thương mại trắng trợn |
 | Noel & Tết Dương | Giao mùa, ấm áp | Tone đỏ-xanh-vàng |

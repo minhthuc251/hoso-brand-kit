@@ -121,16 +121,16 @@ Sản xuất 2-3 ngày · Giao tận nơi · Có lưu kho miễn phí giữa cá
 ```
 [Eyebrow] Tết 2026 — chuẩn bị từ bây giờ
 
-[H1] Hộp Tết HOSO — bao bì kể chuyện cho món quà bạn trao người thân yêu
+[H1] Túi Tết HOSO — bao bì kể chuyện cho món quà bạn trao người thân yêu
 
 [Subheadline]
-Hộp gift Tết kraft nguyên sinh, in phun KTS hoa văn cổ truyền tùy biến theo logo của bạn. Đặt sớm để có thời gian tinh chỉnh design + duyệt mẫu test — không phải vì lo "hết slot".
+Túi Tết kraft nguyên sinh, in phun KTS hoa văn cổ truyền tùy biến theo logo của bạn. Đặt sớm để có thời gian tinh chỉnh design + duyệt mẫu test — không phải vì lo "hết slot".
 
-[Primary CTA]   Inbox HOSO — xem mẫu hộp Tết
+[Primary CTA]   Inbox HOSO — xem mẫu túi Tết
 [Secondary CTA] Đặt mẫu in test miễn phí
 
 [Trust]
-Sản xuất 2-3 ngày · Tinh chỉnh design miễn phí · Giao toàn quốc
+Sản xuất siêu tốc · Tinh chỉnh design miễn phí · Giao toàn quốc
 ```
 
 ---

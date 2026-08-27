@@ -67,7 +67,7 @@ Sản phẩm:    {{tên sản phẩm}}
 Kích thước:  {{...}}
 Chất giấy:   Kraft nguyên sinh nhập khẩu, {{gsm}}
 In:          In phun kỹ thuật số, mực gốc nước, {{số màu/design}}
-Quai:        {{quai xoắn giấy / quai vải đan}}
+Quai:        {{quai xoắn giấy / không quai}}
 Số lượng:    {{số lượng}}
 Đơn giá:     {{X}} VNĐ/cái (chưa VAT)
 VAT 10%:     {{X×0.1}} VNĐ

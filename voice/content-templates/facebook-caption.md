@@ -160,11 +160,11 @@ Inbox HOSO. Gọi 0348 989 949. Email cũng được. HOSO đọc và phản h�
 ```
 ✨ Có một mùa trong năm, bao bì không chỉ là bao bì.
 
-Tết là khi món quà được trao cho người mình quý nhất. Hộp giấy có thể là điều khách bạn nhìn đầu tiên — trước cả khi mở ra.
+Tết là khi món quà được trao cho người mình quý nhất. Chiếc túi có thể là điều khách bạn nhìn đầu tiên — trước cả khi mở ra.
 
-HOSO sản xuất hộp Tết với in phun KTS — kraft đỏ, có thể tùy biến hoa văn theo logo của bạn. Đặt sớm để chuẩn bị từ giờ — kịp tinh chỉnh design + in test trước khi sản xuất.
+HOSO sản xuất túi Tết với in phun KTS — hoa văn cổ truyền tùy biến theo logo của bạn. Đặt sớm để chuẩn bị từ giờ — kịp tinh chỉnh design + in test trước khi sản xuất.
 
-Inbox HOSO — xem vài mẫu hộp Tết HOSO đã làm cho các shop và doanh nghiệp.
+Inbox HOSO — xem vài mẫu túi Tết HOSO đã làm cho các shop và doanh nghiệp.
 
 #HOSO #tuigiayhoso #baobixanh #tetnguyendan
 ```

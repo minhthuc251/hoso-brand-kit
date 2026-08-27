@@ -23,9 +23,9 @@
 | Giấy | Kraft nguyên sinh nhập khẩu, {{gsm}} |
 | Mực | Mực gốc nước, thấm thẳng vào giấy |
 | In | In phun kỹ thuật số (in KTS) — không cần làm kẽm/plate |
-| Quai | {{quai xoắn giấy / quai vải đan}} |
+| Quai | {{quai xoắn giấy / không quai}} |
 | MOQ | **Không ép số lượng tối thiểu** — đơn từ 100 cái HOSO xử lý cùng quy trình |
-| Lead time | **2-3 ngày sản xuất** sau khi duyệt mẫu test |
+| Lead time | Tra ERP `business_facts.print_lead_time_normal` / `_express` — có HAI mức, đừng gộp |
 | Phân hủy | 2-6 tháng trong điều kiện đất tự nhiên |
 
 ## Tùy biến theo brand
@@ -57,13 +57,13 @@ Form đứng chắc chắn, quai xoắn giấy thủ công chịu tải đến 5
 | | |
 |---|---|
 | Kích thước | S: 25×35×15cm · M: 30×40×15cm · L: 38×45×17cm |
-| Giấy | Kraft nguyên sinh nhập khẩu 100%, 150-250gsm |
+| Giấy | Kraft nguyên sinh nhập khẩu 100%, `{{định lượng — tra catalog ERP}}` |
 | Mực | Mực gốc nước, thấm thẳng vào giấy |
 | In | In phun kỹ thuật số (in KTS), không giới hạn số màu, design phức tạp xử lý nhanh |
-| Quai | Quai xoắn giấy thủ công (default) hoặc quai vải đan (option) |
-| Đáy | Đáy hộp gấp 4 cánh, chịu tải 5kg |
-| MOQ | **Không ép — đơn từ 100 cái** |
-| Lead time | **2-3 ngày sản xuất** sau khi duyệt mẫu test |
+| Quai | Quai xoắn giấy thủ công |
+| Đáy | Đáy túi gấp 4 cánh, chịu tải `{{tra ERP business_facts.bag_load_capacity_*}}` |
+| MOQ | **Không ép số lượng** — con số cụ thể tra ERP `business_facts.moq_min_qty`, đừng gõ cứng ở đây |
+| Lead time | Tra ERP `business_facts.print_lead_time_normal` / `_express` — có HAI mức, đừng gộp |
 | Phân hủy | 2-6 tháng trong điều kiện đất tự nhiên |
 
 ## Tùy biến theo brand
