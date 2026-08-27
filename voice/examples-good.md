@@ -80,11 +80,11 @@
 
 > ✨ Có một mùa trong năm, bao bì không chỉ là bao bì.
 >
-> Tết là khi món quà được trao cho người mình quý nhất. Hộp giấy có thể là điều khách bạn nhìn đầu tiên — trước cả khi mở ra.
+> Tết là khi món quà được trao cho người mình quý nhất. Chiếc túi có thể là điều khách bạn nhìn đầu tiên — trước cả khi mở ra.
 >
-> HOSO sản xuất hộp Tết với in phun KTS — kraft đỏ, có thể tùy biến hoa văn theo logo của bạn. Đặt sớm để chuẩn bị từ giờ — kịp tinh chỉnh design + in test trước khi sản xuất.
+> HOSO sản xuất túi Tết với in phun KTS — hoa văn cổ truyền tùy biến theo logo của bạn. Đặt sớm để chuẩn bị từ giờ — kịp tinh chỉnh design + in test trước khi sản xuất.
 >
-> Inbox HOSO — xem vài mẫu hộp Tết HOSO đã làm cho các shop và doanh nghiệp.
+> Inbox HOSO — xem vài mẫu túi Tết HOSO đã làm cho các shop và doanh nghiệp.
 >
 > #HOSO #tuigiayhoso #baobixanh #tetnguyendan
 
@@ -184,15 +184,15 @@ Subject: Bộ sưu tập túi Tết 2026 — đặt sớm để có thời gian 
 
 Chào bạn,
 
-HOSO vừa hoàn thiện bộ mẫu túi & hộp Tết 2026 cho các shop và doanh nghiệp đang chuẩn bị campaign cuối năm:
+HOSO vừa hoàn thiện bộ mẫu túi Tết 2026 cho các shop và doanh nghiệp đang chuẩn bị campaign cuối năm:
 
-• Túi shopping kraft đỏ — in phun KTS theo logo của bạn
-• Hộp gift Tết — kraft 350gsm, có thể in cấn nổi
-• Lì xì + thiệp đồng bộ tone — bộ trọn cho thương hiệu cần đồng nhất
+• Túi shopping kraft — in phun KTS theo logo của bạn
+• Túi Tết in sẵn hoa văn — lấy là dùng được, không cần đặt in riêng
+• Túi giấy không quai — cho hàng nhỏ gọn, đồng bộ tone với túi shopping
 
 Mọi mẫu có thể tùy biến theo logo + thông điệp brand của bạn. Đặt sớm KHÔNG phải vì lo "hết slot" — mà vì có thời gian để HOSO in test 2-3 mẫu, gửi bạn duyệt design trước khi sản xuất chính thức.
 
-Sản xuất chỉ cần 2-3 ngày — nhưng phần tinh chỉnh design + duyệt mẫu nên có 1-2 tuần để bạn không phải vội.
+Sản xuất rất nhanh — nhưng phần tinh chỉnh design + duyệt mẫu nên có 1-2 tuần để bạn không phải vội.
 
 Reply email này hoặc gọi 0348 989 949 để đặt slot tư vấn.
 
@@ -202,7 +202,7 @@ HOSO sẵn sàng đồng hành cùng bạn cho mùa Tết này.
 tuigiayhoso.com · 0348 989 949
 ```
 
-✅ **Đúng vì:** facts đúng (in KTS, 2-3 ngày), không tạo fake urgency ("hết slot"), thẳng thắn về lý do đặt sớm (thời gian tinh chỉnh — bám Core Value 2), ký tên team.
+✅ **Đúng vì:** facts đúng (in KTS), không gõ cứng số ngày sản xuất, không tạo fake urgency ("hết slot"), thẳng thắn về lý do đặt sớm (thời gian tinh chỉnh — bám Core Value 2), ký tên team.
 
 ---
 
@@ -218,8 +218,8 @@ Chào anh/chị {{Tên}},
 Trong thời gian này, HOSO có:
 
 • Cập nhật form túi mới — quai chắc hơn, đáy gấp 4 cánh chịu tải tốt hơn
-• Bổ sung chất liệu giấy 250gsm cho dòng cao cấp
-• Thêm option in cấn nổi cho hộp gift
+• Bổ sung dòng giấy định lượng cao cho hàng cao cấp
+• Thêm mẫu túi in sẵn theo các dịp trong năm
 
 Nếu bạn có lô tiếp theo, HOSO có thể gửi mẫu thật của các update này — miễn phí, không cam kết. Cho bạn xem trước khi quyết.
 
@@ -279,10 +279,10 @@ tuigiayhoso.com
 >
 > **Spec kỹ thuật:**
 > • Kích thước: S 25×35×15cm · M 30×40×15cm · L 38×45×17cm
-> • Giấy: kraft nguyên sinh nhập khẩu 100%, từ 150–250gsm
+> • Giấy: kraft nguyên sinh nhập khẩu 100%
 > • Mực: mực gốc nước thấm thẳng vào giấy
 > • In: in phun KTS, không giới hạn số màu, có thể tùy biến design phức tạp
-> • Quai: quai xoắn giấy thủ công (default) hoặc quai vải đan (option)
+> • Quai: quai xoắn giấy thủ công
 > • MOQ: **không ép — đơn từ 100 cái trở lên**
 > • Lead time: **2-3 ngày sản xuất**
 > • Phân hủy: 2-6 tháng trong điều kiện đất tự nhiên

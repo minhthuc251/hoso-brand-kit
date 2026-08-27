@@ -159,14 +159,16 @@ Tết Nguyên Đán, Rằm tháng Giêng, Giỗ Tổ Hùng Vương, 30/4–1/5, 
 
 ## 7. Industries — 6 ngành ưu tiên
 
-| # | Ngành | Sản phẩm | Visual mood |
-|---|---|---|---|
-| 1 | F&B cà phê / trà sữa | Túi take-away, ly giấy, hộp bánh | Cà phê đang uống, vỉa hè |
-| 2 | F&B bánh / dessert | Hộp bánh trung thu, hộp kem, túi bánh mì | Bánh + nguyên liệu, bếp gia đình |
-| 3 | Thời trang local brand | Túi shopping, hộp giày, túi gift | Người mặc đồ cầm túi, studio mộc |
-| 4 | Mỹ phẩm / skincare | Hộp đựng sản phẩm, túi gift set | Bàn vanity, hoa, đá tự nhiên |
-| 5 | Thực phẩm sạch / organic | Túi rau củ, gạo, hạt | Làng quê, vườn, nắng sớm |
-| 6 | **Làng nghề OCOP** ⭐ | Bao bì truyền thống cho sản phẩm OCOP | Làng nghề, nghệ nhân, di sản |
+| # | Ngành | Visual mood |
+|---|---|---|
+| 1 | F&B cà phê / trà sữa | Cà phê đang uống, vỉa hè |
+| 2 | F&B bánh / dessert | Bánh + nguyên liệu, bếp gia đình |
+| 3 | Thời trang local brand | Người mặc đồ cầm túi, studio mộc |
+| 4 | Mỹ phẩm / skincare | Bàn vanity, hoa, đá tự nhiên |
+| 5 | Thực phẩm sạch / organic | Làng quê, vườn, nắng sớm |
+| 6 | **Làng nghề OCOP** ⭐ | Làng nghề, nghệ nhân, di sản |
+
+> Cột "Sản phẩm" đã bị gỡ 27/08/2026. Nó liệt kê ly giấy, hộp bánh, hộp bánh trung thu, hộp kem, hộp giày, hộp đựng sản phẩm — HOSO không làm mặt hàng nào trong số đó. Đây là danh sách **ngành khách hàng**, không phải danh mục sản phẩm. Muốn biết HOSO làm gì: tra catalog ERP.
 
 ### Discourage list — KHÔNG chủ động chào mời (cập nhật 2026-08-24, xem mục "Lịch sử quyết định")
 > Tên gốc phiên bản 2026-04-28 là "Refuse list (KHÔNG phục vụ)". Founder làm mềm 2026-08-24: đây không còn là từ chối cứng.

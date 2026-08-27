@@ -39,7 +39,7 @@ Chỉ cần mô tả tình huống, trợ lý tự áp đúng giọng + facts:
 
 - *"Viết 3 caption FB cho persona chủ shop mới mở, sản phẩm túi kraft in logo, nhấn không ép số lượng."*
 - *"Soạn email báo giá B2B cho khách mua 5.000 túi bánh trung thu, cần VAT."*
-- *"Mô tả sản phẩm hộp bánh cho landing, giọng HOSO."*
+- *"Mô tả sản phẩm túi bánh mì cho landing, giọng HOSO."*
 - *"Viết kịch bản TikTok 15s về cứu deadline event 2-3 ngày."*
 - *"Prompt tạo ảnh sản phẩm túi kraft phong cách rustic Việt cho quán cà phê."*
 
